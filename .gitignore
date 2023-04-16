@@ -49,8 +49,11 @@ Package.resolved
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 Pods/
+Podfile.lock
 
 .DS_Store
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
+
+TestCase.xcodeproj/xcshareddata
