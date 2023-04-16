@@ -9,4 +9,6 @@
 
 import Foundation
 
-protocol LoginNavigationDelegate: AnyObject {}
+protocol LoginNavigationDelegate: AnyObject {
+  func onOpenMainAction()
+}

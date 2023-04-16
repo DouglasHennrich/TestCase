@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+import FirebaseCrashlytics
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   // MARK: Properties
@@ -21,6 +25,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     options connectionOptions: UIScene.ConnectionOptions
   ) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
+    let navigationController = UINavigationController()
+
+    window = UIWindow(windowScene: windowScene)
+    appCoordinator = AppCoordinator(window: window, navigationController: navigationController)
+
+    FirebaseApp.configure()
+
+    appCoordinator?.start()
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {

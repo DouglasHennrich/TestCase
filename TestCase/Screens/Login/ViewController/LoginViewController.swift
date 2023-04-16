@@ -26,11 +26,16 @@ class LoginViewController: CustomViewController<LoginView> {
     configureBinds()
     
     customView?.delegate = self
+    title = "Login"
   }
 }
 
 // MARK: Conforms to UI Delegate
-extension LoginViewController: LoginViewDelegate {}
+extension LoginViewController: LoginViewDelegate {
+  func onLoginButtonAction(email: String?, password: String?) {
+    print("email", email, "password", password)
+  }
+}
 
 // MARK: Initialize
 extension LoginViewController {

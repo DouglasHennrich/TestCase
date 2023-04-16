@@ -9,4 +9,6 @@
 
 import Foundation
 
-protocol LoginViewDelegate: AnyObject {}
+protocol LoginViewDelegate: AnyObject {
+  func onLoginButtonAction(email: String?, password: String?)
+}
