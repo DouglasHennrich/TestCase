@@ -27,8 +27,9 @@ class LoginViewModel {
   // MARK: Actions
   func onLoginSuccess(_ login: LoginResult) {
     // save user
+    UserDefaults.standard.set(login.uid, forKey: Constants.UserDefaults.userId)
 
-    navigation?.onOpenMainAction()
+    navigation?.onOpenMain()
   }
 }
 
@@ -36,8 +37,11 @@ class LoginViewModel {
 extension LoginViewModel: LoginViewModelDelegate {
   func onLoginAction(loginType: LoginTypeEnum, email: String?, password: String?) {
     guard let email,
-          let password
+          !email.isEmpty,
+          let password,
+          !password.isEmpty
     else {
+      stateView.value = .error(message: "Campos vazios")
       return
     }
 
@@ -56,5 +60,9 @@ extension LoginViewModel: LoginViewModelDelegate {
           self.stateView.value = .error(message: error.localizedDescription)
       }
     }
+  }
+
+  func onOpenRegisterAction() {
+    navigation?.onOpenRegister()
   }
 }

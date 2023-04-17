@@ -38,7 +38,7 @@ extension LoginViewController: LoginViewDelegate {
   }
 
   func onRegisterButtonAction() {
-    print(#function)
+    viewModel?.onOpenRegisterAction()
   }
 }
 

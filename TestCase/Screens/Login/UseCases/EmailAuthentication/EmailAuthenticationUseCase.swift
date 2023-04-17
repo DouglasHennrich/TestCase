@@ -10,11 +10,11 @@ import FirebaseAuth
 
 class EmailAuthenticationUseCase: EmailAuthenticationUseCaseDelegate {
   // MARK: Properties
-  var emailProvider: EmailProviderDelegate?
+  var emailRepository: EmailRepositoryDelegate?
 
   // MARK: Init
-  init(emailProvider: EmailProviderDelegate?) {
-    self.emailProvider = emailProvider
+  init(emailRepository: EmailRepositoryDelegate?) {
+    self.emailRepository = emailRepository
   }
 
   // MARK: Actions
@@ -22,15 +22,23 @@ class EmailAuthenticationUseCase: EmailAuthenticationUseCaseDelegate {
     _ request: EmailAuthenticationUseCaseDTO,
     onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   ) {
-    emailProvider?.login(
+    emailRepository?.login(
       email: request.email,
       password: request.password
-    ) { result in
+    ) { [weak self] result in
+      guard self != nil else { return }
+
       switch result {
-        case .success(let success):
-          break
-        case .failure(let failure):
-          break
+        case .success(let data):
+          guard let loginResponse: LoginResult = data.toModel() else {
+            completion(.failure(.noUserFound))
+            return
+          }
+
+          completion(.success(loginResponse))
+
+        case .failure(let error):
+          completion(.failure(.init(error: error)))
       }
     }
   }

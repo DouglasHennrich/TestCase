@@ -26,15 +26,19 @@ class RegisterViewModel {
 
   // MARK: Actions
   func onRegisterSuccess(_ register: RegisterResult) {
-
+    UserDefaults.standard.set(register.uid, forKey: Constants.UserDefaults.userId)
+    navigation?.onRegisterSuccess()
   }
 }
 
 extension RegisterViewModel: RegisterViewModelDelegate {
   func onRegister(with email: String?, password: String?) {
     guard let email,
-          let password
+          !email.isEmpty,
+          let password,
+          !password.isEmpty
     else {
+      stateView.value = .error(message: "Campos vazios")
       return
     }
     let request = RegisterUseCaseDTO(email: email, password: password)
@@ -52,5 +56,9 @@ extension RegisterViewModel: RegisterViewModelDelegate {
           self.stateView.value = .error(message: error.message)
       }
     }
+  }
+
+  func onExit() {
+    navigation?.removeRegisterViewModelReference()
   }
 }

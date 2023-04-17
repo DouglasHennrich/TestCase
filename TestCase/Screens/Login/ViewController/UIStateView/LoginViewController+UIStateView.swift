@@ -46,6 +46,9 @@ private extension LoginViewController {
     customView?.stopLoader()
 
     let alert = UIAlertController(title: "Ops", message: message, preferredStyle: .alert)
+    let action = UIAlertAction(title: "ok", style: .default)
+
+    alert.addAction(action)
 
     present(alert, animated: true)
   }

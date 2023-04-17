@@ -16,6 +16,6 @@ class AppleAuthenticationUseCase: AppleAuthenticationUseCaseDelegate {
 
   // MARK: Actions
   func execute(_ request: AppleAuthenticationUseCaseDTO) {
-    
+    // TODO
   }
 }

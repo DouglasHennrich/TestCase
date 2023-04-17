@@ -9,4 +9,7 @@
 
 import Foundation
 
-protocol RegisterNavigationDelegate: AnyObject {}
+protocol RegisterNavigationDelegate: AnyObject {
+  func removeRegisterViewModelReference()
+  func onRegisterSuccess()
+}

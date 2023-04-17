@@ -26,6 +26,13 @@ class RegisterViewController: CustomViewController<RegisterView> {
     configureBinds()
     
     customView?.delegate = self
+    title = "Registrar"
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    viewModel?.onExit()
   }
 }
 

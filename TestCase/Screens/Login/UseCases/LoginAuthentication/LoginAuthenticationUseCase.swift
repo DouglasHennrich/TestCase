@@ -48,12 +48,7 @@ class LoginAuthenticationUseCase: LoginAuthenticationUseCaseDelegate {
 
     let request = EmailAuthenticationUseCaseDTO(email: email, password: password)
 
-    emailUseCase?.execute(request) { result in
-      switch result {
-        case .success(let success): break
-        case .failure(let failure): break
-      }
-    }
+    emailUseCase?.execute(request, onCompletion: completion)
   }
 
   private func appleAuthenticate(

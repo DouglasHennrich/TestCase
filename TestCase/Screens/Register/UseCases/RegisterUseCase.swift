@@ -9,11 +9,11 @@ import Foundation
 
 class RegisterUseCase: RegisterUseCaseDelegate {
   // MARK: Properties
-  var provider: RegisterProviderDelegate?
+  var repository: RegisterRepositoryDelegate?
 
   // MARK: Init
-  init(provider: RegisterProviderDelegate?) {
-    self.provider = provider
+  init(repository: RegisterRepositoryDelegate?) {
+    self.repository = repository
   }
   
   // MARK: Actions
@@ -21,6 +21,21 @@ class RegisterUseCase: RegisterUseCaseDelegate {
     _ request: RegisterUseCaseDTO,
     onCompletion completion: @escaping (Result<RegisterResult, AppError>) -> Void
   ) {
-    provider?.register(email: request.email, password: request.password, onCompletion: completion)
+    repository?.register(email: request.email, password: request.password) { [weak self] result in
+      guard self != nil else { return }
+
+      switch result {
+        case .success(let data):
+          guard let register: RegisterResult = data.toModel() else {
+            completion(.failure(.noUserFound))
+            return
+          }
+
+          completion(.success(register))
+
+        case .failure(let error):
+          completion(.failure(.init(error: error)))
+      }
+    }
   }
 }

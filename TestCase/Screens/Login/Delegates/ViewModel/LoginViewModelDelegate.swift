@@ -13,4 +13,5 @@ protocol LoginViewModelDelegate: AnyObject {
   var stateView: Binder<UIStateEnum> { get }
 
   func onLoginAction(loginType: LoginTypeEnum, email: String?, password: String?)
+  func onOpenRegisterAction()
 }

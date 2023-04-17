@@ -10,6 +10,8 @@ import UIKit
 class AppCoordinator {
   // MARK: Properties
   var loginViewModel: LoginViewModel?
+  var registerViewModel: RegisterViewModelDelegate?
+  var mainViewModel: MainViewModelDelegate?
 
   // MARK: Components
   let window: UIWindow?
@@ -50,6 +52,7 @@ private extension AppCoordinator {
     let appearance = UINavigationBarAppearance()
     let appearanceStandard = UINavigationBarAppearance()
     let buttonAppearance = UIBarButtonItemAppearance()
+
     buttonAppearance.normal.titleTextAttributes = [
       .foregroundColor: UIColor.Colors.primary
     ]
@@ -67,12 +70,13 @@ private extension AppCoordinator {
     appearanceStandard.titleTextAttributes = [.foregroundColor: UIColor.Colors.navBarTitle]
     appearanceStandard.shadowImage = UIImage()
     appearanceStandard.backgroundImage = UIImage()
-    appearanceStandard.backgroundColor = UIColor.Colors.backgroundDark
+    appearanceStandard.backgroundColor = .Colors.backgroundDark
     appearanceStandard.shadowColor = nil
     appearanceStandard.buttonAppearance = buttonAppearance
     appearanceStandard.backButtonAppearance = buttonAppearance
     appearanceStandard.doneButtonAppearance = buttonAppearance
 
+    navigation.navigationBar.tintColor = .Colors.primary
     navigation.navigationBar.compactAppearance = appearance
     navigation.navigationBar.standardAppearance = appearanceStandard
     navigation.navigationBar.scrollEdgeAppearance = appearance

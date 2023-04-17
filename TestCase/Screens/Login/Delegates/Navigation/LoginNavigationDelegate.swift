@@ -10,5 +10,6 @@
 import Foundation
 
 protocol LoginNavigationDelegate: AnyObject {
-  func onOpenMainAction()
+  func onOpenMain()
+  func onOpenRegister()
 }

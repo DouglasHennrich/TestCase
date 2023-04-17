@@ -13,4 +13,5 @@ protocol RegisterViewModelDelegate: AnyObject {
   var stateView: Binder<UIStateEnum> { get }
 
   func onRegister(with email: String?, password: String?)
+  func onExit()
 }

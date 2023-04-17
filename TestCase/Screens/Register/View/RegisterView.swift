@@ -37,7 +37,7 @@ class RegisterView: UIView {
     endEditing(true)
   }
   
-  func onRegisterButtonAction() {
+  @objc func onRegisterButtonAction() {
     delegate?.onRegisterButtonAction(email: emailField.text, password: passwordField.text)
   }
 }

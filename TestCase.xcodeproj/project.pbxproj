@@ -22,9 +22,31 @@
 		C1052D4829ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4729ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift */; };
 		C1052D4A29ECE018003FDFB7 /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4929ECE018003FDFB7 /* RegisterResult.swift */; };
 		C1052D4C29ED69C4003FDFB7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4B29ED69C4003FDFB7 /* AppError.swift */; };
-		C1052D5029ED6EE0003FDFB7 /* RegisterProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */; };
-		C1052D5229ED6F1C003FDFB7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5129ED6F1C003FDFB7 /* File.swift */; };
+		C1052D5029ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4F29ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift */; };
 		C1052D5629ED7761003FDFB7 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5529ED7761003FDFB7 /* Constans.swift */; };
+		C1052D5929ED7994003FDFB7 /* AppCoordinator+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5829ED7994003FDFB7 /* AppCoordinator+Register.swift */; };
+		C1052D5C29ED7C09003FDFB7 /* RegisterView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5B29ED7C09003FDFB7 /* RegisterView+TextFieldDelegate.swift */; };
+		C17C7A7729ED857200775A81 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A6529ED857200775A81 /* MainViewModel.swift */; };
+		C17C7A7829ED857200775A81 /* MainView+Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A6829ED857200775A81 /* MainView+Layouts.swift */; };
+		C17C7A7929ED857200775A81 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A6929ED857200775A81 /* MainView.swift */; };
+		C17C7A7A29ED857200775A81 /* MainViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A6C29ED857200775A81 /* MainViewModelDelegate.swift */; };
+		C17C7A7B29ED857200775A81 /* MainNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A6E29ED857200775A81 /* MainNavigationDelegate.swift */; };
+		C17C7A7C29ED857200775A81 /* MainViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A7029ED857200775A81 /* MainViewDelegate.swift */; };
+		C17C7A7D29ED857200775A81 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A7229ED857200775A81 /* MainViewController.swift */; };
+		C17C7A7E29ED857200775A81 /* MainViewController+UIStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A7429ED857200775A81 /* MainViewController+UIStateView.swift */; };
+		C17C7A7F29ED857200775A81 /* MainViewController+Binds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A7629ED857200775A81 /* MainViewController+Binds.swift */; };
+		C17C7A8429ED86C100775A81 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8329ED86C100775A81 /* Workout.swift */; };
+		C17C7A8629ED88B600775A81 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8529ED88B600775A81 /* Exercise.swift */; };
+		C17C7A8829ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8729ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift */; };
+		C17C7A8A29ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8929ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift */; };
+		C17C7A8C29ED8EBB00775A81 /* WorkoutsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8B29ED8EBB00775A81 /* WorkoutsUseCase.swift */; };
+		C17C7A8F29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A8E29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift */; };
+		C17C7A9229ED900400775A81 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9129ED900400775A81 /* DictionaryExtensions.swift */; };
+		C17C7A9529ED902700775A81 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9429ED902700775A81 /* DataExtensions.swift */; };
+		C17C7A9829ED904F00775A81 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9729ED904F00775A81 /* EncodableExtensions.swift */; };
+		C17C7A9A29ED919100775A81 /* swiftlint.yaml in Resources */ = {isa = PBXBuildFile; fileRef = C17C7A9929ED919100775A81 /* swiftlint.yaml */; };
+		C17C7A9C29ED94A000775A81 /* WorkoutsFirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9B29ED94A000775A81 /* WorkoutsFirestoreRepository.swift */; };
+		C17C7A9F29ED987000775A81 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */; };
 		C1E579C829EB5FED00A6FEE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C1E579C729EB5FED00A6FEE7 /* Podfile */; };
 		C1E579CC29EC4A4800A6FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */; };
 		C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579CE29EC5AD000A6FEE7 /* TextField.swift */; };
@@ -42,8 +64,8 @@
 		C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579FD29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift */; };
 		C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0329ECBD0C00A6FEE7 /* User.swift */; };
 		C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */; };
-		C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */; };
-		C1E57A0C29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */; };
+		C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0929ECC59700A6FEE7 /* FirebaseAuthRepository.swift */; };
+		C1E57A0C29ECC5AE00A6FEE7 /* EmailRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0B29ECC5AE00A6FEE7 /* EmailRepositoryDelegate.swift */; };
 		C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */; };
 		C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */; };
 		C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6429EB30B80069ED29 /* AppDelegate.swift */; };
@@ -86,9 +108,31 @@
 		C1052D4729ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseDelegate.swift; sourceTree = "<group>"; };
 		C1052D4929ECE018003FDFB7 /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		C1052D4B29ED69C4003FDFB7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
-		C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProviderDelegate.swift; sourceTree = "<group>"; };
-		C1052D5129ED6F1C003FDFB7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C1052D4F29ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRepositoryDelegate.swift; sourceTree = "<group>"; };
 		C1052D5529ED7761003FDFB7 /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		C1052D5829ED7994003FDFB7 /* AppCoordinator+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator+Register.swift"; sourceTree = "<group>"; };
+		C1052D5B29ED7C09003FDFB7 /* RegisterView+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		C17C7A6529ED857200775A81 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		C17C7A6829ED857200775A81 /* MainView+Layouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainView+Layouts.swift"; sourceTree = "<group>"; };
+		C17C7A6929ED857200775A81 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C17C7A6C29ED857200775A81 /* MainViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModelDelegate.swift; sourceTree = "<group>"; };
+		C17C7A6E29ED857200775A81 /* MainNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationDelegate.swift; sourceTree = "<group>"; };
+		C17C7A7029ED857200775A81 /* MainViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewDelegate.swift; sourceTree = "<group>"; };
+		C17C7A7229ED857200775A81 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C17C7A7429ED857200775A81 /* MainViewController+UIStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+UIStateView.swift"; sourceTree = "<group>"; };
+		C17C7A7629ED857200775A81 /* MainViewController+Binds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+Binds.swift"; sourceTree = "<group>"; };
+		C17C7A8329ED86C100775A81 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C17C7A8529ED88B600775A81 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		C17C7A8729ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C17C7A8929ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsUseCaseDTO.swift; sourceTree = "<group>"; };
+		C17C7A8B29ED8EBB00775A81 /* WorkoutsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsUseCase.swift; sourceTree = "<group>"; };
+		C17C7A8E29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsRepositoryDelegate.swift; sourceTree = "<group>"; };
+		C17C7A9129ED900400775A81 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		C17C7A9429ED902700775A81 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		C17C7A9729ED904F00775A81 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		C17C7A9929ED919100775A81 /* swiftlint.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yaml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.yaml; };
+		C17C7A9B29ED94A000775A81 /* WorkoutsFirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsFirestoreRepository.swift; sourceTree = "<group>"; };
+		C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		C1E579C729EB5FED00A6FEE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1E579CA29EB7CFE00A6FEE7 /* TestCase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCase.entitlements; sourceTree = "<group>"; };
 		C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -107,8 +151,8 @@
 		C1E579FD29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthenticationUseCaseDTO.swift; sourceTree = "<group>"; };
 		C1E57A0329ECBD0C00A6FEE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
-		C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProvider.swift; sourceTree = "<group>"; };
-		C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailProviderDelegate.swift; sourceTree = "<group>"; };
+		C1E57A0929ECC59700A6FEE7 /* FirebaseAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthRepository.swift; sourceTree = "<group>"; };
+		C1E57A0B29ECC5AE00A6FEE7 /* EmailRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRepositoryDelegate.swift; sourceTree = "<group>"; };
 		C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+AppleAuthentication.swift"; sourceTree = "<group>"; };
 		C1FE7D6129EB30B80069ED29 /* TestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,7 +208,7 @@
 				C1052D4429ECDF9C003FDFB7 /* Models */,
 				C1052D2B29ECDF70003FDFB7 /* Delegates */,
 				C1052D4129ECDF84003FDFB7 /* UseCases */,
-				C1052D4D29ED6E87003FDFB7 /* Provider */,
+				C1052D4D29ED6E87003FDFB7 /* Repositories */,
 				C1052D2729ECDF70003FDFB7 /* View */,
 				C1052D3229ECDF70003FDFB7 /* ViewController */,
 				C1052D2529ECDF70003FDFB7 /* ViewModel */,
@@ -185,6 +229,7 @@
 			children = (
 				C1052D2A29ECDF70003FDFB7 /* RegisterView.swift */,
 				C1052D2829ECDF70003FDFB7 /* Layouts */,
+				C1052D5A29ED7BF7003FDFB7 /* TextField */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,37 +320,219 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C1052D4D29ED6E87003FDFB7 /* Provider */ = {
+		C1052D4D29ED6E87003FDFB7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				C1052D4E29ED6EBB003FDFB7 /* Register */,
 			);
-			path = Provider;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C1052D4E29ED6EBB003FDFB7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */,
-				C1052D5129ED6F1C003FDFB7 /* File.swift */,
+				C1052D4F29ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
 		};
-		C1052D5329ED6F2B003FDFB7 /* Provider */ = {
+		C1052D5329ED6F2B003FDFB7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				C1052D5429ED6F39003FDFB7 /* FirebaseAuth */,
 			);
-			path = Provider;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C1052D5429ED6F39003FDFB7 /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */,
+				C1E57A0929ECC59700A6FEE7 /* FirebaseAuthRepository.swift */,
 			);
 			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		C1052D5729ED7984003FDFB7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D5829ED7994003FDFB7 /* AppCoordinator+Register.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C1052D5A29ED7BF7003FDFB7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D5B29ED7C09003FDFB7 /* RegisterView+TextFieldDelegate.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		C17C7A6329ED857200775A81 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6A29ED857200775A81 /* Delegates */,
+				C17C7A8229ED86AD00775A81 /* Models */,
+				C17C7A8D29ED8EFB00775A81 /* Repositories */,
+				C17C7A8029ED867F00775A81 /* UseCases */,
+				C17C7A6629ED857200775A81 /* View */,
+				C17C7A6429ED857200775A81 /* ViewModel */,
+				C17C7A7129ED857200775A81 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C17C7A6429ED857200775A81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6529ED857200775A81 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C17C7A6629ED857200775A81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6729ED857200775A81 /* Layouts */,
+				C17C7A6929ED857200775A81 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C17C7A6729ED857200775A81 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6829ED857200775A81 /* MainView+Layouts.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C17C7A6A29ED857200775A81 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6B29ED857200775A81 /* ViewModel */,
+				C17C7A6D29ED857200775A81 /* Navigation */,
+				C17C7A6F29ED857200775A81 /* View */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C17C7A6B29ED857200775A81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6C29ED857200775A81 /* MainViewModelDelegate.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C17C7A6D29ED857200775A81 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A6E29ED857200775A81 /* MainNavigationDelegate.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C17C7A6F29ED857200775A81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A7029ED857200775A81 /* MainViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C17C7A7129ED857200775A81 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A7229ED857200775A81 /* MainViewController.swift */,
+				C17C7A7329ED857200775A81 /* UIStateView */,
+				C17C7A7529ED857200775A81 /* Binds */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C17C7A7329ED857200775A81 /* UIStateView */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A7429ED857200775A81 /* MainViewController+UIStateView.swift */,
+			);
+			path = UIStateView;
+			sourceTree = "<group>";
+		};
+		C17C7A7529ED857200775A81 /* Binds */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A7629ED857200775A81 /* MainViewController+Binds.swift */,
+			);
+			path = Binds;
+			sourceTree = "<group>";
+		};
+		C17C7A8029ED867F00775A81 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A8129ED869300775A81 /* Workouts */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C17C7A8129ED869300775A81 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A8729ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift */,
+				C17C7A8B29ED8EBB00775A81 /* WorkoutsUseCase.swift */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		C17C7A8229ED86AD00775A81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A8329ED86C100775A81 /* Workout.swift */,
+				C17C7A8929ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift */,
+				C17C7A8529ED88B600775A81 /* Exercise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C17C7A8D29ED8EFB00775A81 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A8E29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift */,
+				C17C7A9B29ED94A000775A81 /* WorkoutsFirestoreRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C17C7A9029ED8FC300775A81 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A9129ED900400775A81 /* DictionaryExtensions.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		C17C7A9329ED902000775A81 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A9429ED902700775A81 /* DataExtensions.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C17C7A9629ED904500775A81 /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A9729ED904F00775A81 /* EncodableExtensions.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		C17C7A9D29ED986700775A81 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 		C1E579CD29EC5ABC00A6FEE7 /* TextField */ = {
@@ -400,7 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E57A0229ECBD0000A6FEE7 /* Models */,
-				C1052D5329ED6F2B003FDFB7 /* Provider */,
+				C1052D5329ED6F2B003FDFB7 /* Repositories */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -414,18 +641,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C1E57A0729ECC58800A6FEE7 /* Provider */ = {
+		C1E57A0729ECC58800A6FEE7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				C1E57A0829ECC58F00A6FEE7 /* Email */,
 			);
-			path = Provider;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C1E57A0829ECC58F00A6FEE7 /* Email */ = {
 			isa = PBXGroup;
 			children = (
-				C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */,
+				C1E57A0B29ECC5AE00A6FEE7 /* EmailRepositoryDelegate.swift */,
 			);
 			path = Email;
 			sourceTree = "<group>";
@@ -433,6 +660,10 @@
 		C1E57A0D29ECCAC200A6FEE7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C17C7A9D29ED986700775A81 /* Array */,
+				C17C7A9629ED904500775A81 /* Encodable */,
+				C17C7A9329ED902000775A81 /* Data */,
+				C17C7A9029ED8FC300775A81 /* Dictionary */,
 				C1E57A0E29ECCAC700A6FEE7 /* UIView */,
 			);
 			path = Extensions;
@@ -462,6 +693,7 @@
 				024EA6B08E1AFBA520C803A3 /* Pods */,
 				E81EDEFA055F33F0E9275126 /* Frameworks */,
 				C1E579C729EB5FED00A6FEE7 /* Podfile */,
+				C17C7A9929ED919100775A81 /* swiftlint.yaml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -497,6 +729,7 @@
 			children = (
 				C1FE7D7D29EB32220069ED29 /* AppCoordinator.swift */,
 				C1FE7DB129EB3BD20069ED29 /* Login */,
+				C1052D5729ED7984003FDFB7 /* Register */,
 				C1FE7DB429EB3C330069ED29 /* Main */,
 			);
 			path = Coordinator;
@@ -509,7 +742,7 @@
 				C1E579F829ECB08300A6FEE7 /* Models */,
 				C1FE7D8E29EB33A70069ED29 /* Delegates */,
 				C1E579DC29ECAB9000A6FEE7 /* UseCases */,
-				C1E57A0729ECC58800A6FEE7 /* Provider */,
+				C1E57A0729ECC58800A6FEE7 /* Repositories */,
 				C1FE7D8A29EB33A70069ED29 /* View */,
 				C1FE7D9529EB33A70069ED29 /* ViewController */,
 				C1FE7D8829EB33A70069ED29 /* ViewModel */,
@@ -619,6 +852,7 @@
 			children = (
 				C1FE7D8729EB33A70069ED29 /* Login */,
 				C1052D2429ECDF70003FDFB7 /* Register */,
+				C17C7A6329ED857200775A81 /* Main */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -763,6 +997,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FE7D7429EB30BA0069ED29 /* LaunchScreen.storyboard in Resources */,
+				C17C7A9A29ED919100775A81 /* swiftlint.yaml in Resources */,
 				C1E579CC29EC4A4800A6FEE7 /* GoogleService-Info.plist in Resources */,
 				C1FE7D7129EB30BA0069ED29 /* Assets.xcassets in Resources */,
 				C1E579C829EB5FED00A6FEE7 /* Podfile in Resources */,
@@ -860,24 +1095,32 @@
 				C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */,
 				C1052D4329ECDF97003FDFB7 /* RegisterUseCase.swift in Sources */,
 				C1FE7DA129EB33A70069ED29 /* LoginViewController.swift in Sources */,
+				C17C7A7C29ED857200775A81 /* MainViewDelegate.swift in Sources */,
 				C1052D4629ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift in Sources */,
+				C1052D5929ED7994003FDFB7 /* AppCoordinator+Register.swift in Sources */,
 				C1052D3A29ECDF70003FDFB7 /* RegisterView.swift in Sources */,
-				C1052D5029ED6EE0003FDFB7 /* RegisterProviderDelegate.swift in Sources */,
+				C1052D5029ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift in Sources */,
 				C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */,
 				C1E579EB29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift in Sources */,
+				C17C7A9229ED900400775A81 /* DictionaryExtensions.swift in Sources */,
 				C1FE7DB929EB55400069ED29 /* Colors.swift in Sources */,
+				C17C7A8629ED88B600775A81 /* Exercise.swift in Sources */,
 				C1052D4C29ED69C4003FDFB7 /* AppError.swift in Sources */,
 				C1FE7DA329EB33A70069ED29 /* LoginViewController+Binds.swift in Sources */,
 				C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */,
+				C17C7A7A29ED857200775A81 /* MainViewModelDelegate.swift in Sources */,
+				C17C7A8A29ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift in Sources */,
 				C1E579FC29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift in Sources */,
+				C17C7A8429ED86C100775A81 /* Workout.swift in Sources */,
 				C1052D3F29ECDF70003FDFB7 /* RegisterViewController+Binds.swift in Sources */,
+				C17C7A8C29ED8EBB00775A81 /* WorkoutsUseCase.swift in Sources */,
 				C1052D3929ECDF70003FDFB7 /* RegisterView+Layouts.swift in Sources */,
 				C1052D3B29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift in Sources */,
-				C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */,
+				C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthRepository.swift in Sources */,
 				C1FE7DB629EB3C430069ED29 /* AppCoordinator+Main.swift in Sources */,
 				C1052D3829ECDF70003FDFB7 /* RegisterViewModel.swift in Sources */,
-				C1052D5229ED6F1C003FDFB7 /* File.swift in Sources */,
 				C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */,
+				C17C7A8F29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift in Sources */,
 				C1FE7D9F29EB33A70069ED29 /* LoginNavigationDelegate.swift in Sources */,
 				C1E579E329ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */,
@@ -888,28 +1131,41 @@
 				C1E579F229ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift in Sources */,
 				C1FE7D9E29EB33A70069ED29 /* LoginViewModelDelegate.swift in Sources */,
 				C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */,
+				C17C7A7729ED857200775A81 /* MainViewModel.swift in Sources */,
 				C1FE7DAD29EB34A80069ED29 /* UIStateView.swift in Sources */,
 				C1052D4029ECDF70003FDFB7 /* RegisterViewController.swift in Sources */,
+				C17C7A7B29ED857200775A81 /* MainNavigationDelegate.swift in Sources */,
 				C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */,
 				C1052D4A29ECE018003FDFB7 /* RegisterResult.swift in Sources */,
+				C17C7A7E29ED857200775A81 /* MainViewController+UIStateView.swift in Sources */,
 				C1FE7D9D29EB33A70069ED29 /* LoginView+Layouts.swift in Sources */,
 				C1FE7D6F29EB30B80069ED29 /* TestCase.xcdatamodeld in Sources */,
+				C17C7A7D29ED857200775A81 /* MainViewController.swift in Sources */,
 				C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */,
 				C1FE7DA229EB33A70069ED29 /* LoginViewController+UIStateView.swift in Sources */,
 				C1FE7DB029EB35F70069ED29 /* Binder.swift in Sources */,
 				C1FE7D9B29EB33A70069ED29 /* LoginViewModel.swift in Sources */,
+				C17C7A7929ED857200775A81 /* MainView.swift in Sources */,
 				C1052D3D29ECDF70003FDFB7 /* RegisterViewDelegate.swift in Sources */,
 				C1E579F729ECB05C00A6FEE7 /* LoginTypeEnum.swift in Sources */,
 				C1052D3E29ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift in Sources */,
+				C17C7A9529ED902700775A81 /* DataExtensions.swift in Sources */,
+				C17C7A9F29ED987000775A81 /* ArrayExtensions.swift in Sources */,
 				C1052D4829ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift in Sources */,
+				C17C7A7829ED857200775A81 /* MainView+Layouts.swift in Sources */,
 				C1FE7DA029EB33A70069ED29 /* LoginViewDelegate.swift in Sources */,
 				C1E579FA29ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift in Sources */,
 				C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */,
 				C1052D3C29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift in Sources */,
 				C1FE7D7E29EB32220069ED29 /* AppCoordinator.swift in Sources */,
 				C1FE7DAA29EB34190069ED29 /* CustomViewController.swift in Sources */,
+				C17C7A9829ED904F00775A81 /* EncodableExtensions.swift in Sources */,
 				C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */,
-				C1E57A0C29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift in Sources */,
+				C17C7A7F29ED857200775A81 /* MainViewController+Binds.swift in Sources */,
+				C1E57A0C29ECC5AE00A6FEE7 /* EmailRepositoryDelegate.swift in Sources */,
+				C1052D5C29ED7C09003FDFB7 /* RegisterView+TextFieldDelegate.swift in Sources */,
+				C17C7A8829ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift in Sources */,
+				C17C7A9C29ED94A000775A81 /* WorkoutsFirestoreRepository.swift in Sources */,
 				C1FE7D6729EB30B80069ED29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,8 +1310,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestCase/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Workouts;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1085,8 +1342,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestCase/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Workouts;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (

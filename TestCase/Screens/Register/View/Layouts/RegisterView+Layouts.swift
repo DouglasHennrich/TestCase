@@ -200,6 +200,10 @@ private extension RegisterView {
       registerButton.trailingAnchor.constraint(
         equalTo: containerView.trailingAnchor,
         constant: -Constants.Screen.padding
+      ),
+      registerButton.bottomAnchor.constraint(
+        equalTo: containerView.bottomAnchor,
+        constant: -Constants.Screen.padding
       )
     ])
   }

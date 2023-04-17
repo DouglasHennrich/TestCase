@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LoginTypeEnum {
+enum LoginTypeEnum: String, Codable {
   case apple
   case email
 }

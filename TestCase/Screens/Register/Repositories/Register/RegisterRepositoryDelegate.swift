@@ -7,10 +7,10 @@
 
 import Foundation
 
-protocol RegisterProviderDelegate: AnyObject {
+protocol RegisterRepositoryDelegate: AnyObject {
   func register(
     email: String,
     password: String,
-    onCompletion completion: @escaping (Result<RegisterResult, AppError>) -> Void
+    onCompletion completion: @escaping (Result<Data, Error>) -> Void
   )
 }

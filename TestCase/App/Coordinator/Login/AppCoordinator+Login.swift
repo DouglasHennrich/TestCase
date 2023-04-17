@@ -9,10 +9,14 @@ import Foundation
 
 // MARK: Conforms to Login Navigation
 extension AppCoordinator: LoginNavigationDelegate {
-  func onOpenMainAction() {
+  func onOpenMain() {
     openMain()
 
     loginViewModel = nil
+  }
+
+  func onOpenRegister() {
+    openRegister()
   }
 }
 
@@ -40,8 +44,8 @@ private extension AppCoordinator {
   func createLoginViewModel(navigation: LoginNavigationDelegate?) -> LoginViewModelDelegate {
     let appleAuthenticationUseCase = createAppleAuthenticationUseCase()
 
-    let firebaseProvider = FirebaseAuthProvider()
-    let emailAuthenticationUseCase = createEmailAuthenticationUseCase(provider: firebaseProvider)
+    let firebaseRepository = FirebaseAuthRepository()
+    let emailAuthenticationUseCase = createEmailAuthenticationUseCase(repository: firebaseRepository)
 
     let loginUseCase = createLoginUseCase(
       appleUseCase: appleAuthenticationUseCase,
@@ -69,8 +73,8 @@ private extension AppCoordinator {
   }
 
   func createEmailAuthenticationUseCase(
-    provider: EmailProviderDelegate?
+    repository: EmailRepositoryDelegate?
   ) -> EmailAuthenticationUseCaseDelegate? {
-    EmailAuthenticationUseCase(firebaseAuthProvider: provider)
+    EmailAuthenticationUseCase(emailRepository: repository)
   }
 }
