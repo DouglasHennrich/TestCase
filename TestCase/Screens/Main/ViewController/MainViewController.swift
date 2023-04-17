@@ -24,6 +24,7 @@ class MainViewController: CustomViewController<MainView> {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureBinds()
+    customView?.assignCollectionViewDelegates(to: self)
     
     customView?.delegate = self
     title = "Workouts"
@@ -33,7 +34,11 @@ class MainViewController: CustomViewController<MainView> {
 }
 
 // MARK: Conforms to UI Delegate
-extension MainViewController: MainViewDelegate {}
+extension MainViewController: MainViewDelegate {
+  func refreshWorkouts() {
+    viewModel?.getWorkouts()
+  }
+}
 
 // MARK: Initialize
 extension MainViewController {

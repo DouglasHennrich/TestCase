@@ -42,7 +42,7 @@ class AppCoordinator {
 // MARK: Actions
 private extension AppCoordinator {
   func checkIfUserIsLogged() -> Bool {
-    return false
+    UserDefaults.standard.string(forKey: Constants.UserDefaults.userId) != nil
   }
 }
 

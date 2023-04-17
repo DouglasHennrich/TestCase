@@ -7,6 +7,8 @@
 //
 //
 
-import Foundation
+import UIKit
 
-protocol MainViewDelegate: AnyObject {}
+protocol MainViewDelegate: AnyObject {
+  func refreshWorkouts()
+}

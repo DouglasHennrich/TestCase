@@ -14,6 +14,7 @@ class MainViewModel {
   var navigation: MainNavigationDelegate?
   var workoutsUseCase: WorkoutsUseCaseDelegate?
   var stateView: Binder<UIStateEnum> = Binder(.normal)
+  var workouts: Binder<Workouts> = Binder([])
 
   // MARK: Init
   init(
@@ -41,12 +42,20 @@ extension MainViewModel: MainViewModelDelegate {
 
       switch result {
         case .success(let workouts):
-          print("workouts", workouts)
           self.stateView.value = .normal
+          self.workouts.value = workouts
 
         case .failure(let error):
           self.stateView.value = .error(message: error.message)
       }
     }
+  }
+
+  func openWorkoutDetails(_ workout: Workout?) {
+    print(workout)
+  }
+
+  func onDeleteWorkout(_ workout: Workout?) {
+
   }
 }

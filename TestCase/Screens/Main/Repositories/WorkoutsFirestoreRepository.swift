@@ -18,7 +18,7 @@ class WorkoutsFirestoreRepository: WorkoutsRepositoryDelegate {
     onCompletion completion: @escaping (Result<Data, Error>) -> Void
   ) {
     database
-      .collection("users")
+      .collection("workouts")
       .whereField("userId", isEqualTo: userId)
       .getDocuments() { querySnapshot, error in
 
@@ -37,11 +37,13 @@ class WorkoutsFirestoreRepository: WorkoutsRepositoryDelegate {
 
         let documentsArray = documents.map {
           let dictionary = $0.data()
+          let uid = $0.documentID
           let name = dictionary["name"] as? String ?? ""
           let description = dictionary["description"] as? String ?? ""
-          let date = dictionary["date"] as? TimeInterval ?? 0.0
+          let dateFirestore = dictionary["date"] as? Timestamp ?? nil
+          let timeInterval = TimeInterval(dateFirestore?.seconds ?? 0)
 
-          return Workout(name: name, description: description, date: date)
+          return Workout(uid: uid, name: name, description: description, date: timeInterval)
         }
 
         guard let payload = documentsArray.toData() else {

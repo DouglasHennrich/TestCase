@@ -7,6 +7,13 @@
 
 import UIKit
 
+// MARK: Identifier
+extension UIView {
+  class var identifier: String {
+    return String(describing: self)
+  }
+}
+
 // MARK: Loading
 extension UIView {
   func startLoader(message: String? = nil) {

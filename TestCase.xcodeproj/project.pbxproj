@@ -47,6 +47,13 @@
 		C17C7A9A29ED919100775A81 /* swiftlint.yaml in Resources */ = {isa = PBXBuildFile; fileRef = C17C7A9929ED919100775A81 /* swiftlint.yaml */; };
 		C17C7A9C29ED94A000775A81 /* WorkoutsFirestoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9B29ED94A000775A81 /* WorkoutsFirestoreRepository.swift */; };
 		C17C7A9F29ED987000775A81 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */; };
+		C17C7AA229EDB39D00775A81 /* MainViewController+CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AA129EDB39D00775A81 /* MainViewController+CollectionDataSource.swift */; };
+		C17C7AA529EDB3C100775A81 /* MainViewController+CollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AA429EDB3C100775A81 /* MainViewController+CollectionDelegate.swift */; };
+		C17C7AA829EDB4D900775A81 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AA729EDB4D900775A81 /* CollectionViewExtensions.swift */; };
+		C17C7AAD29EDB6B800775A81 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AAC29EDB6B800775A81 /* WorkoutCollectionViewCell.swift */; };
+		C17C7AB029EDB72C00775A81 /* WorkoutCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AAF29EDB72C00775A81 /* WorkoutCellDelegate.swift */; };
+		C17C7AB329EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AB229EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift */; };
+		C17C7AB629EDB85200775A81 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AB529EDB85200775A81 /* Label.swift */; };
 		C1E579C829EB5FED00A6FEE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C1E579C729EB5FED00A6FEE7 /* Podfile */; };
 		C1E579CC29EC4A4800A6FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */; };
 		C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579CE29EC5AD000A6FEE7 /* TextField.swift */; };
@@ -133,6 +140,13 @@
 		C17C7A9929ED919100775A81 /* swiftlint.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yaml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.yaml; };
 		C17C7A9B29ED94A000775A81 /* WorkoutsFirestoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsFirestoreRepository.swift; sourceTree = "<group>"; };
 		C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		C17C7AA129EDB39D00775A81 /* MainViewController+CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionDataSource.swift"; sourceTree = "<group>"; };
+		C17C7AA429EDB3C100775A81 /* MainViewController+CollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+CollectionDelegate.swift"; sourceTree = "<group>"; };
+		C17C7AA729EDB4D900775A81 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		C17C7AAC29EDB6B800775A81 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		C17C7AAF29EDB72C00775A81 /* WorkoutCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellDelegate.swift; sourceTree = "<group>"; };
+		C17C7AB229EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCollectionViewCell+Layouts.swift"; sourceTree = "<group>"; };
+		C17C7AB529EDB85200775A81 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		C1E579C729EB5FED00A6FEE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1E579CA29EB7CFE00A6FEE7 /* TestCase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCase.entitlements; sourceTree = "<group>"; };
 		C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -371,13 +385,14 @@
 		C17C7A6329ED857200775A81 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C17C7AAA29EDB69200775A81 /* Components */,
 				C17C7A6A29ED857200775A81 /* Delegates */,
 				C17C7A8229ED86AD00775A81 /* Models */,
 				C17C7A8D29ED8EFB00775A81 /* Repositories */,
 				C17C7A8029ED867F00775A81 /* UseCases */,
 				C17C7A6629ED857200775A81 /* View */,
-				C17C7A6429ED857200775A81 /* ViewModel */,
 				C17C7A7129ED857200775A81 /* ViewController */,
+				C17C7A6429ED857200775A81 /* ViewModel */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -393,8 +408,8 @@
 		C17C7A6629ED857200775A81 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C17C7A6729ED857200775A81 /* Layouts */,
 				C17C7A6929ED857200775A81 /* MainView.swift */,
+				C17C7A6729ED857200775A81 /* Layouts */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,9 +425,10 @@
 		C17C7A6A29ED857200775A81 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				C17C7A6B29ED857200775A81 /* ViewModel */,
+				C17C7AAE29EDB72600775A81 /* Cell */,
 				C17C7A6D29ED857200775A81 /* Navigation */,
 				C17C7A6F29ED857200775A81 /* View */,
+				C17C7A6B29ED857200775A81 /* ViewModel */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -445,8 +461,10 @@
 			isa = PBXGroup;
 			children = (
 				C17C7A7229ED857200775A81 /* MainViewController.swift */,
-				C17C7A7329ED857200775A81 /* UIStateView */,
 				C17C7A7529ED857200775A81 /* Binds */,
+				C17C7AA029EDB37E00775A81 /* CollectionDataSource */,
+				C17C7AA329EDB3B600775A81 /* CollectionDelegate */,
+				C17C7A7329ED857200775A81 /* UIStateView */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -478,8 +496,8 @@
 		C17C7A8129ED869300775A81 /* Workouts */ = {
 			isa = PBXGroup;
 			children = (
-				C17C7A8729ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift */,
 				C17C7A8B29ED8EBB00775A81 /* WorkoutsUseCase.swift */,
+				C17C7A8729ED8DC800775A81 /* WorkoutsUseCaseDelegate.swift */,
 			);
 			path = Workouts;
 			sourceTree = "<group>";
@@ -533,6 +551,71 @@
 				C17C7A9E29ED987000775A81 /* ArrayExtensions.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		C17C7AA029EDB37E00775A81 /* CollectionDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AA129EDB39D00775A81 /* MainViewController+CollectionDataSource.swift */,
+			);
+			path = CollectionDataSource;
+			sourceTree = "<group>";
+		};
+		C17C7AA329EDB3B600775A81 /* CollectionDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AA429EDB3C100775A81 /* MainViewController+CollectionDelegate.swift */,
+			);
+			path = CollectionDelegate;
+			sourceTree = "<group>";
+		};
+		C17C7AA629EDB4CD00775A81 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AA729EDB4D900775A81 /* CollectionViewExtensions.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		C17C7AAA29EDB69200775A81 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AAB29EDB69900775A81 /* Cell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C17C7AAB29EDB69900775A81 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AAC29EDB6B800775A81 /* WorkoutCollectionViewCell.swift */,
+				C17C7AB129EDB79200775A81 /* Layouts */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C17C7AAE29EDB72600775A81 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AAF29EDB72C00775A81 /* WorkoutCellDelegate.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C17C7AB129EDB79200775A81 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AB229EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C17C7AB429EDB84100775A81 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AB529EDB85200775A81 /* Label.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		C1E579CD29EC5ABC00A6FEE7 /* TextField */ = {
@@ -626,6 +709,7 @@
 		C1E57A0129ECBCFA00A6FEE7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C1FE7DA729EB34040069ED29 /* Components */,
 				C1E57A0229ECBD0000A6FEE7 /* Models */,
 				C1052D5329ED6F2B003FDFB7 /* Repositories */,
 			);
@@ -664,6 +748,7 @@
 				C17C7A9629ED904500775A81 /* Encodable */,
 				C17C7A9329ED902000775A81 /* Data */,
 				C17C7A9029ED8FC300775A81 /* Dictionary */,
+				C17C7AA629EDB4CD00775A81 /* UICollectionView */,
 				C1E57A0E29ECCAC700A6FEE7 /* UIView */,
 			);
 			path = Extensions;
@@ -712,7 +797,6 @@
 				C1FE7DA429EB33B20069ED29 /* App */,
 				C1FE7DA529EB33D20069ED29 /* Screens */,
 				C1E57A0129ECBCFA00A6FEE7 /* Shared */,
-				C1FE7DA729EB34040069ED29 /* Components */,
 				C1E57A0D29ECCAC200A6FEE7 /* Extensions */,
 				C1FE7DA629EB33FE0069ED29 /* Utilities */,
 				C1FE7D7029EB30BA0069ED29 /* Assets.xcassets */,
@@ -873,6 +957,7 @@
 			children = (
 				C1E579D429EC76F000A6FEE7 /* Button */,
 				C1FE7DA829EB34080069ED29 /* CustomViewController */,
+				C17C7AB429EDB84100775A81 /* Label */,
 				C1E579CD29EC5ABC00A6FEE7 /* TextField */,
 			);
 			path = Components;
@@ -1095,10 +1180,12 @@
 				C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */,
 				C1052D4329ECDF97003FDFB7 /* RegisterUseCase.swift in Sources */,
 				C1FE7DA129EB33A70069ED29 /* LoginViewController.swift in Sources */,
+				C17C7AB329EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift in Sources */,
 				C17C7A7C29ED857200775A81 /* MainViewDelegate.swift in Sources */,
 				C1052D4629ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift in Sources */,
 				C1052D5929ED7994003FDFB7 /* AppCoordinator+Register.swift in Sources */,
 				C1052D3A29ECDF70003FDFB7 /* RegisterView.swift in Sources */,
+				C17C7AA229EDB39D00775A81 /* MainViewController+CollectionDataSource.swift in Sources */,
 				C1052D5029ED6EE0003FDFB7 /* RegisterRepositoryDelegate.swift in Sources */,
 				C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */,
 				C1E579EB29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift in Sources */,
@@ -1118,6 +1205,7 @@
 				C1052D3B29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift in Sources */,
 				C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthRepository.swift in Sources */,
 				C1FE7DB629EB3C430069ED29 /* AppCoordinator+Main.swift in Sources */,
+				C17C7AA829EDB4D900775A81 /* CollectionViewExtensions.swift in Sources */,
 				C1052D3829ECDF70003FDFB7 /* RegisterViewModel.swift in Sources */,
 				C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */,
 				C17C7A8F29ED8F0900775A81 /* WorkoutsRepositoryDelegate.swift in Sources */,
@@ -1125,6 +1213,7 @@
 				C1E579E329ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */,
 				C1FE7DB329EB3BE60069ED29 /* AppCoordinator+Login.swift in Sources */,
+				C17C7AB029EDB72C00775A81 /* WorkoutCellDelegate.swift in Sources */,
 				C1FE7D9C29EB33A70069ED29 /* LoginView.swift in Sources */,
 				C1052D5629ED7761003FDFB7 /* Constans.swift in Sources */,
 				C1E579ED29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift in Sources */,
@@ -1133,7 +1222,9 @@
 				C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */,
 				C17C7A7729ED857200775A81 /* MainViewModel.swift in Sources */,
 				C1FE7DAD29EB34A80069ED29 /* UIStateView.swift in Sources */,
+				C17C7AAD29EDB6B800775A81 /* WorkoutCollectionViewCell.swift in Sources */,
 				C1052D4029ECDF70003FDFB7 /* RegisterViewController.swift in Sources */,
+				C17C7AA529EDB3C100775A81 /* MainViewController+CollectionDelegate.swift in Sources */,
 				C17C7A7B29ED857200775A81 /* MainNavigationDelegate.swift in Sources */,
 				C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */,
 				C1052D4A29ECE018003FDFB7 /* RegisterResult.swift in Sources */,
@@ -1146,6 +1237,7 @@
 				C1FE7DB029EB35F70069ED29 /* Binder.swift in Sources */,
 				C1FE7D9B29EB33A70069ED29 /* LoginViewModel.swift in Sources */,
 				C17C7A7929ED857200775A81 /* MainView.swift in Sources */,
+				C17C7AB629EDB85200775A81 /* Label.swift in Sources */,
 				C1052D3D29ECDF70003FDFB7 /* RegisterViewDelegate.swift in Sources */,
 				C1E579F729ECB05C00A6FEE7 /* LoginTypeEnum.swift in Sources */,
 				C1052D3E29ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift in Sources */,

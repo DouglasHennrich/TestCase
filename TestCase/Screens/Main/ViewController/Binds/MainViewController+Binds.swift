@@ -16,5 +16,12 @@ extension MainViewController {
 
       self.stateView = newState
     }
+
+    viewModel?.workouts.bind { [weak self] workouts in
+      guard let self = self else { return }
+
+      self.customView?.collectionView.reloadData()
+      self.customView?.endRefreshing()
+    }
   }
 }
