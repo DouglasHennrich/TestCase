@@ -19,6 +19,7 @@ extension LoginView {
     configurePasswordField()
     configureLoginButton()
     configureAppleSignInButton()
+    configureRegisterButton()
   }
 }
 
@@ -136,8 +137,11 @@ private extension LoginView {
   func configureEmailFieldConstraints() {
     NSLayoutConstraint.activate([
       emailField.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 20),
-      emailField.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: screenPadding),
-      emailField.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -screenPadding)
+      emailField.leadingAnchor.constraint(
+        equalTo: containerView.leadingAnchor,
+        constant: Constants.Screen.padding
+      ),
+      emailField.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -Constants.Screen.padding)
     ])
   }
 }
@@ -165,11 +169,11 @@ private extension LoginView {
       passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 16),
       passwordField.leadingAnchor.constraint(
         equalTo: containerView.leadingAnchor,
-        constant: screenPadding
+        constant: Constants.Screen.padding
       ),
       passwordField.trailingAnchor.constraint(
         equalTo: containerView.trailingAnchor,
-        constant: -screenPadding
+        constant: -Constants.Screen.padding
       )
     ])
   }
@@ -191,8 +195,14 @@ private extension LoginView {
   func configureLoginButtonConstraints() {
     NSLayoutConstraint.activate([
       loginButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 16),
-      loginButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: screenPadding),
-      loginButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -screenPadding)
+      loginButton.leadingAnchor.constraint(
+        equalTo: containerView.leadingAnchor,
+        constant: Constants.Screen.padding
+      ),
+      loginButton.trailingAnchor.constraint(
+        equalTo: containerView.trailingAnchor,
+        constant: -Constants.Screen.padding
+      )
     ])
   }
 }
@@ -217,13 +227,45 @@ private extension LoginView {
       appleSignInButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 60),
       appleSignInButton.leadingAnchor.constraint(
         equalTo: containerView.leadingAnchor,
-        constant: screenPadding
+        constant: Constants.Screen.padding
       ),
       appleSignInButton.trailingAnchor.constraint(
         equalTo: containerView.trailingAnchor,
-        constant: -screenPadding
+        constant: -Constants.Screen.padding
       ),
-      appleSignInButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+      appleSignInButton.heightAnchor.constraint(equalToConstant: 40)
+    ])
+  }
+}
+
+// MARK: RegisterButton
+private extension LoginView {
+  func configureRegisterButton() {
+    containerView.addSubview(registerButton)
+
+    configureRegisterButtonAction()
+    configureRegisterButtonConstraints()
+  }
+
+  func configureRegisterButtonAction() {
+    registerButton.addTarget(self, action: #selector(onRegisterButtonAction), for: .touchUpInside)
+  }
+
+  func configureRegisterButtonConstraints() {
+    NSLayoutConstraint.activate([
+      registerButton.topAnchor.constraint(equalTo: appleSignInButton.bottomAnchor, constant: 16),
+      registerButton.leadingAnchor.constraint(
+        equalTo: containerView.leadingAnchor,
+        constant: Constants.Screen.padding
+      ),
+      registerButton.trailingAnchor.constraint(
+        equalTo: containerView.trailingAnchor,
+        constant: -Constants.Screen.padding
+      ),
+      registerButton.bottomAnchor.constraint(
+        equalTo: containerView.bottomAnchor,
+        constant: -Constants.Screen.padding
+      )
     ])
   }
 }

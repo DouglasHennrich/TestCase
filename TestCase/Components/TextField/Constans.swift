@@ -8,7 +8,6 @@
 import UIKit
 
 enum Constants {
-  // Screen
   enum Screen {
     static let width = UIScreen.main.bounds.size.width
     static let height = UIScreen.main.bounds.size.height
@@ -17,9 +16,9 @@ enum Constants {
     static let safeAreaTopInsets = UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
     static let safeAreaBottomInsets = UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
     static let tabBarHeight: CGFloat = 49
+    static let padding: CGFloat = 24
   }
 
-  // Device Types
   enum DeviceTypes {
     static let idiom = UIDevice.current.userInterfaceIdiom
     static let nativeScale = UIScreen.main.nativeScale

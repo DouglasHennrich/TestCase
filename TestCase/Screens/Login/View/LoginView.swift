@@ -9,14 +9,11 @@
 
 import UIKit
 import AuthenticationServices
-import FirebaseAuth
 
 class LoginView: UIView {
   // MARK: Properties
   weak var delegate: LoginViewDelegate?
   weak var appleAuthenticationDelegate: (ASAuthorizationControllerDelegate & ASAuthorizationControllerPresentationContextProviding)?
-
-  let screenPadding: CGFloat = 24
 
   // MARK: Components
   let scrollView = UIScrollView()
@@ -29,6 +26,7 @@ class LoginView: UIView {
     authorizationButtonType: .continue,
     authorizationButtonStyle: .black
   )
+  let registerButton = Button(title: "registrar", fulfill: false)
 
   // MARK: Init
   init() {
@@ -59,5 +57,9 @@ class LoginView: UIView {
     authorizationController.delegate = appleAuthenticationDelegate
     authorizationController.presentationContextProvider = appleAuthenticationDelegate
     authorizationController.performRequests()
+  }
+
+  @objc func onRegisterButtonAction() {
+    delegate?.onRegisterButtonAction()
   }
 }

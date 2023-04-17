@@ -10,7 +10,9 @@ import Foundation
 // MARK: Actions
 extension AppCoordinator {
   func openMain() {
-    window?.rootViewController = navigationController
+    if window?.rootViewController == nil {
+      window?.rootViewController = navigationController
+    }
 
     window?.makeKeyAndVisible()
   }

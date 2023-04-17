@@ -7,10 +7,10 @@
 
 import Foundation
 
-public enum UIStateEnum {
+public enum UIStateEnum: Equatable {
   case normal
   case loading
-  case error
+  case error(message: String?)
   case empty
 }
 

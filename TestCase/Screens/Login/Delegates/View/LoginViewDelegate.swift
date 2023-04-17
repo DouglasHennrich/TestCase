@@ -11,4 +11,5 @@ import Foundation
 
 protocol LoginViewDelegate: AnyObject {
   func onLoginButtonAction(email: String?, password: String?)
+  func onRegisterButtonAction()
 }

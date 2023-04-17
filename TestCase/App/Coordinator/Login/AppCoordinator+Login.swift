@@ -38,9 +38,39 @@ private extension AppCoordinator {
   }
 
   func createLoginViewModel(navigation: LoginNavigationDelegate?) -> LoginViewModelDelegate {
-    let viewModel = LoginViewModel(navigation: navigation)
+    let appleAuthenticationUseCase = createAppleAuthenticationUseCase()
+
+    let firebaseProvider = FirebaseAuthProvider()
+    let emailAuthenticationUseCase = createEmailAuthenticationUseCase(provider: firebaseProvider)
+
+    let loginUseCase = createLoginUseCase(
+      appleUseCase: appleAuthenticationUseCase,
+      emailUseCase: emailAuthenticationUseCase
+    )
+    let viewModel = LoginViewModel(
+      navigation: navigation,
+      loginUseCase: loginUseCase
+    )
+
     loginViewModel = viewModel
 
     return viewModel
+  }
+
+  func createLoginUseCase(
+    appleUseCase: AppleAuthenticationUseCaseDelegate?,
+    emailUseCase: EmailAuthenticationUseCaseDelegate?
+  ) -> LoginAuthenticationUseCaseDelegate? {
+    LoginAuthenticationUseCase(appleUseCase: appleUseCase, emailUseCase: emailUseCase)
+  }
+
+  func createAppleAuthenticationUseCase() -> AppleAuthenticationUseCaseDelegate? {
+    AppleAuthenticationUseCase()
+  }
+
+  func createEmailAuthenticationUseCase(
+    provider: FirebaseAuthProviderDelegate?
+  ) -> EmailAuthenticationUseCaseDelegate? {
+    EmailAuthenticationUseCase(firebaseAuthProvider: provider)
   }
 }

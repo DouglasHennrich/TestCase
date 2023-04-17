@@ -12,10 +12,17 @@ class Button: UIButton {
   lazy var heightConstraint: NSLayoutConstraint = {
     heightAnchor.constraint(equalToConstant: 40)
   }()
+  private var fulfill = true
 
   // MARK: Init
-  init(title: String?) {
+  init(
+    title: String?,
+    fulfill: Bool = true
+  ) {
     super.init(frame: .zero)
+
+    self.fulfill = fulfill
+
     configureUI()
 
     setTitle(title, for: .normal)
@@ -35,12 +42,17 @@ private extension Button {
   }
 
   func configureSpecs() {
-    layer.borderWidth = 1
-    layer.borderColor = UIColor.Colors.primary.cgColor
-    layer.cornerRadius = 6
-    backgroundColor = .Colors.backgroundDark
-
     setTitleColor(.Colors.primary, for: .normal)
+
+    if fulfill {
+      layer.borderWidth = 1
+      layer.borderColor = UIColor.Colors.primary.cgColor
+      layer.cornerRadius = 6
+
+      backgroundColor = .Colors.backgroundDark
+    } else {
+      titleLabel?.font = .systemFont(ofSize: 14, weight: .bold)
+    }
   }
 
   func configureConstraints() {

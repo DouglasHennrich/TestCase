@@ -14,9 +14,24 @@
 		C1E579D329EC73AB00A6FEE7 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D229EC73AB00A6FEE7 /* Constans.swift */; };
 		C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D529EC76F700A6FEE7 /* Button.swift */; };
 		C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D829EC7BA200A6FEE7 /* LoginView+TextField.swift */; };
+		C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579DE29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift */; };
+		C1E579E329ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579E229ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift */; };
+		C1E579EB29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579EA29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift */; };
+		C1E579ED29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579EC29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift */; };
+		C1E579F229ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579F129ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift */; };
+		C1E579F429ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579F329ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift */; };
+		C1E579F729ECB05C00A6FEE7 /* LoginTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579F629ECB05C00A6FEE7 /* LoginTypeEnum.swift */; };
+		C1E579FA29ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579F929ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift */; };
+		C1E579FC29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579FB29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift */; };
+		C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579FD29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift */; };
+		C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0329ECBD0C00A6FEE7 /* User.swift */; };
+		C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */; };
+		C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */; };
+		C1E57A0C29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */; };
+		C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */; };
+		C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */; };
 		C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6429EB30B80069ED29 /* AppDelegate.swift */; };
 		C1FE7D6729EB30B80069ED29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6629EB30B80069ED29 /* SceneDelegate.swift */; };
-		C1FE7D6929EB30B80069ED29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6829EB30B80069ED29 /* ViewController.swift */; };
 		C1FE7D6F29EB30B80069ED29 /* TestCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6D29EB30B80069ED29 /* TestCase.xcdatamodeld */; };
 		C1FE7D7129EB30BA0069ED29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FE7D7029EB30BA0069ED29 /* Assets.xcassets */; };
 		C1FE7D7429EB30BA0069ED29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FE7D7229EB30BA0069ED29 /* LaunchScreen.storyboard */; };
@@ -48,10 +63,25 @@
 		C1E579D229EC73AB00A6FEE7 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constans.swift; path = TestCase/Utilities/Components/TextField/Constans.swift; sourceTree = SOURCE_ROOT; };
 		C1E579D529EC76F700A6FEE7 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C1E579D829EC7BA200A6FEE7 /* LoginView+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+TextField.swift"; sourceTree = "<group>"; };
+		C1E579DE29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationUseCase.swift; sourceTree = "<group>"; };
+		C1E579E229ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C1E579EA29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthenticationUseCase.swift; sourceTree = "<group>"; };
+		C1E579EC29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthenticationUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C1E579F129ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationUseCase.swift; sourceTree = "<group>"; };
+		C1E579F329ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C1E579F629ECB05C00A6FEE7 /* LoginTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypeEnum.swift; sourceTree = "<group>"; };
+		C1E579F929ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationUseCaseDTO.swift; sourceTree = "<group>"; };
+		C1E579FB29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthenticationUseCaseDTO.swift; sourceTree = "<group>"; };
+		C1E579FD29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthenticationUseCaseDTO.swift; sourceTree = "<group>"; };
+		C1E57A0329ECBD0C00A6FEE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProvider.swift; sourceTree = "<group>"; };
+		C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProviderDelegate.swift; sourceTree = "<group>"; };
+		C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+AppleAuthentication.swift"; sourceTree = "<group>"; };
 		C1FE7D6129EB30B80069ED29 /* TestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FE7D6429EB30B80069ED29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FE7D6629EB30B80069ED29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1FE7D6829EB30B80069ED29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1FE7D6E29EB30B80069ED29 /* TestCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCase.xcdatamodel; sourceTree = "<group>"; };
 		C1FE7D7029EB30BA0069ED29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1FE7D7329EB30BA0069ED29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +158,119 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		C1E579DC29ECAB9000A6FEE7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579F029ECAFA000A6FEE7 /* LoginAuthentication */,
+				C1E579DD29ECABA600A6FEE7 /* AppleAuthentication */,
+				C1E579E929ECAD1E00A6FEE7 /* EmailAuthentication */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C1E579DD29ECABA600A6FEE7 /* AppleAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579DE29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift */,
+				C1E579E229ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift */,
+			);
+			path = AppleAuthentication;
+			sourceTree = "<group>";
+		};
+		C1E579E929ECAD1E00A6FEE7 /* EmailAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579EA29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift */,
+				C1E579EC29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift */,
+			);
+			path = EmailAuthentication;
+			sourceTree = "<group>";
+		};
+		C1E579F029ECAFA000A6FEE7 /* LoginAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579F129ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift */,
+				C1E579F329ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift */,
+			);
+			path = LoginAuthentication;
+			sourceTree = "<group>";
+		};
+		C1E579F529ECB05600A6FEE7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579F629ECB05C00A6FEE7 /* LoginTypeEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C1E579F829ECB08300A6FEE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1E579F929ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift */,
+				C1E579FB29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift */,
+				C1E579FD29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift */,
+				C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1E57A0129ECBCFA00A6FEE7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0229ECBD0000A6FEE7 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C1E57A0229ECBD0000A6FEE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0329ECBD0C00A6FEE7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1E57A0729ECC58800A6FEE7 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0829ECC58F00A6FEE7 /* FirebaseAuth */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C1E57A0829ECC58F00A6FEE7 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */,
+				C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		C1E57A0D29ECCAC200A6FEE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0E29ECCAC700A6FEE7 /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1E57A0E29ECCAC700A6FEE7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C1E57A1129ECD69B00A6FEE7 /* AppleAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */,
+			);
+			path = AppleAuthentication;
+			sourceTree = "<group>";
+		};
 		C1FE7D5829EB30B80069ED29 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +296,10 @@
 				C1E579CA29EB7CFE00A6FEE7 /* TestCase.entitlements */,
 				C1FE7DA429EB33B20069ED29 /* App */,
 				C1FE7DA529EB33D20069ED29 /* Screens */,
+				C1E57A0129ECBCFA00A6FEE7 /* Shared */,
+				C1FE7DA729EB34040069ED29 /* Components */,
+				C1E57A0D29ECCAC200A6FEE7 /* Extensions */,
 				C1FE7DA629EB33FE0069ED29 /* Utilities */,
-				C1FE7D6829EB30B80069ED29 /* ViewController.swift */,
 				C1FE7D7029EB30BA0069ED29 /* Assets.xcassets */,
 				C1FE7D7229EB30BA0069ED29 /* LaunchScreen.storyboard */,
 				C1FE7D7529EB30BA0069ED29 /* Info.plist */,
@@ -177,7 +322,11 @@
 		C1FE7D8729EB33A70069ED29 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				C1E579F529ECB05600A6FEE7 /* Enums */,
+				C1E579F829ECB08300A6FEE7 /* Models */,
 				C1FE7D8E29EB33A70069ED29 /* Delegates */,
+				C1E579DC29ECAB9000A6FEE7 /* UseCases */,
+				C1E57A0729ECC58800A6FEE7 /* Provider */,
 				C1FE7D8A29EB33A70069ED29 /* View */,
 				C1FE7D9529EB33A70069ED29 /* ViewController */,
 				C1FE7D8829EB33A70069ED29 /* ViewModel */,
@@ -249,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				C1FE7D9629EB33A70069ED29 /* LoginViewController.swift */,
+				C1E57A1129ECD69B00A6FEE7 /* AppleAuthentication */,
 				C1FE7D9929EB33A70069ED29 /* Binds */,
 				C1FE7D9729EB33A70069ED29 /* UIStateView */,
 			);
@@ -295,7 +445,6 @@
 				C1FE7DAE29EB35F20069ED29 /* Binder */,
 				C1FE7DB729EB55350069ED29 /* Colors */,
 				C1E579D129EC739100A6FEE7 /* Constants */,
-				C1FE7DA729EB34040069ED29 /* Components */,
 				C1FE7DAB29EB349E0069ED29 /* UIStateView */,
 			);
 			path = Utilities;
@@ -464,6 +613,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = Crashlytics;
 			outputFileListPaths = (
@@ -472,7 +623,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n\"${PODS_ROOT}/FirebaseCrashlytics/upload-symbols\" -gsp \"${PROJECT_DIR}/TestCase/GoogleService-Info.plist\" -p ios \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"\n";
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		C1E579D029EC6B2000A6FEE7 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -521,29 +672,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E579F429ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift in Sources */,
+				C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */,
 				C1FE7DA129EB33A70069ED29 /* LoginViewController.swift in Sources */,
 				C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */,
+				C1E579EB29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift in Sources */,
 				C1FE7DB929EB55400069ED29 /* Colors.swift in Sources */,
 				C1FE7DA329EB33A70069ED29 /* LoginViewController+Binds.swift in Sources */,
 				C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */,
+				C1E579FC29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift in Sources */,
+				C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */,
 				C1FE7DB629EB3C430069ED29 /* AppCoordinator+Main.swift in Sources */,
+				C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */,
 				C1FE7D9F29EB33A70069ED29 /* LoginNavigationDelegate.swift in Sources */,
-				C1FE7D6929EB30B80069ED29 /* ViewController.swift in Sources */,
+				C1E579E329ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift in Sources */,
+				C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */,
 				C1FE7DB329EB3BE60069ED29 /* AppCoordinator+Login.swift in Sources */,
 				C1FE7D9C29EB33A70069ED29 /* LoginView.swift in Sources */,
+				C1E579ED29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift in Sources */,
+				C1E579F229ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift in Sources */,
 				C1FE7D9E29EB33A70069ED29 /* LoginViewModelDelegate.swift in Sources */,
+				C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */,
 				C1FE7DAD29EB34A80069ED29 /* UIStateView.swift in Sources */,
 				C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */,
 				C1FE7D9D29EB33A70069ED29 /* LoginView+Layouts.swift in Sources */,
 				C1FE7D6F29EB30B80069ED29 /* TestCase.xcdatamodeld in Sources */,
+				C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */,
 				C1FE7DA229EB33A70069ED29 /* LoginViewController+UIStateView.swift in Sources */,
 				C1FE7DB029EB35F70069ED29 /* Binder.swift in Sources */,
 				C1FE7D9B29EB33A70069ED29 /* LoginViewModel.swift in Sources */,
+				C1E579F729ECB05C00A6FEE7 /* LoginTypeEnum.swift in Sources */,
 				C1E579D329EC73AB00A6FEE7 /* Constans.swift in Sources */,
 				C1FE7DA029EB33A70069ED29 /* LoginViewDelegate.swift in Sources */,
+				C1E579FA29ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift in Sources */,
+				C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */,
 				C1FE7D7E29EB32220069ED29 /* AppCoordinator.swift in Sources */,
 				C1FE7DAA29EB34190069ED29 /* CustomViewController.swift in Sources */,
 				C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */,
+				C1E57A0C29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift in Sources */,
 				C1FE7D6729EB30B80069ED29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
