@@ -24,7 +24,7 @@ class LoginAuthenticationUseCase: LoginAuthenticationUseCaseDelegate {
   // MARK: Actions
   func execute(
     _ request: LoginAuthenticationUseCaseDTO,
-    onCompletion completion: @escaping (Result<LoginResult, Error>) -> Void
+    onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   ) {
     switch request.loginType {
       case .email:
@@ -37,12 +37,12 @@ class LoginAuthenticationUseCase: LoginAuthenticationUseCaseDelegate {
 
   private func emailAuthenticate(
     _ request: LoginAuthenticationUseCaseDTO,
-    onCompletion completion: @escaping (Result<LoginResult, Error>) -> Void
+    onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   ) {
     guard let email = request.email,
           let password = request.password
     else {
-      completion(.failure(NSError(domain: "Missing parameters", code: -1)))
+      completion(.failure(.missingParameters))
       return
     }
 

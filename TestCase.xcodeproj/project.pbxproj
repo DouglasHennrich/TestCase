@@ -8,10 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		769E5F03DBE2FAD8DDB23F1A /* Pods_TestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D8CE5822586679E58517 /* Pods_TestCase.framework */; };
+		C1052D3829ECDF70003FDFB7 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D2629ECDF70003FDFB7 /* RegisterViewModel.swift */; };
+		C1052D3929ECDF70003FDFB7 /* RegisterView+Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D2929ECDF70003FDFB7 /* RegisterView+Layouts.swift */; };
+		C1052D3A29ECDF70003FDFB7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D2A29ECDF70003FDFB7 /* RegisterView.swift */; };
+		C1052D3B29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D2D29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift */; };
+		C1052D3C29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D2F29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift */; };
+		C1052D3D29ECDF70003FDFB7 /* RegisterViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D3129ECDF70003FDFB7 /* RegisterViewDelegate.swift */; };
+		C1052D3E29ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D3429ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift */; };
+		C1052D3F29ECDF70003FDFB7 /* RegisterViewController+Binds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D3629ECDF70003FDFB7 /* RegisterViewController+Binds.swift */; };
+		C1052D4029ECDF70003FDFB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D3729ECDF70003FDFB7 /* RegisterViewController.swift */; };
+		C1052D4329ECDF97003FDFB7 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4229ECDF97003FDFB7 /* RegisterUseCase.swift */; };
+		C1052D4629ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4529ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift */; };
+		C1052D4829ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4729ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift */; };
+		C1052D4A29ECE018003FDFB7 /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4929ECE018003FDFB7 /* RegisterResult.swift */; };
+		C1052D4C29ED69C4003FDFB7 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4B29ED69C4003FDFB7 /* AppError.swift */; };
+		C1052D5029ED6EE0003FDFB7 /* RegisterProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */; };
+		C1052D5229ED6F1C003FDFB7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5129ED6F1C003FDFB7 /* File.swift */; };
+		C1052D5629ED7761003FDFB7 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1052D5529ED7761003FDFB7 /* Constans.swift */; };
 		C1E579C829EB5FED00A6FEE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C1E579C729EB5FED00A6FEE7 /* Podfile */; };
 		C1E579CC29EC4A4800A6FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */; };
 		C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579CE29EC5AD000A6FEE7 /* TextField.swift */; };
-		C1E579D329EC73AB00A6FEE7 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D229EC73AB00A6FEE7 /* Constans.swift */; };
 		C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D529EC76F700A6FEE7 /* Button.swift */; };
 		C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579D829EC7BA200A6FEE7 /* LoginView+TextField.swift */; };
 		C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579DE29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift */; };
@@ -27,7 +43,7 @@
 		C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0329ECBD0C00A6FEE7 /* User.swift */; };
 		C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */; };
 		C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */; };
-		C1E57A0C29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */; };
+		C1E57A0C29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */; };
 		C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */; };
 		C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */; };
 		C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE7D6429EB30B80069ED29 /* AppDelegate.swift */; };
@@ -56,11 +72,27 @@
 /* Begin PBXFileReference section */
 		2BE9D8CE5822586679E58517 /* Pods_TestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A619F51F1BD9CE5E7783E4C4 /* Pods-TestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCase.release.xcconfig"; path = "Target Support Files/Pods-TestCase/Pods-TestCase.release.xcconfig"; sourceTree = "<group>"; };
+		C1052D2629ECDF70003FDFB7 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		C1052D2929ECDF70003FDFB7 /* RegisterView+Layouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegisterView+Layouts.swift"; sourceTree = "<group>"; };
+		C1052D2A29ECDF70003FDFB7 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		C1052D2D29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModelDelegate.swift; sourceTree = "<group>"; };
+		C1052D2F29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterNavigationDelegate.swift; sourceTree = "<group>"; };
+		C1052D3129ECDF70003FDFB7 /* RegisterViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewDelegate.swift; sourceTree = "<group>"; };
+		C1052D3429ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+UIStateView.swift"; sourceTree = "<group>"; };
+		C1052D3629ECDF70003FDFB7 /* RegisterViewController+Binds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+Binds.swift"; sourceTree = "<group>"; };
+		C1052D3729ECDF70003FDFB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C1052D4229ECDF97003FDFB7 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		C1052D4529ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseDTO.swift; sourceTree = "<group>"; };
+		C1052D4729ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C1052D4929ECE018003FDFB7 /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
+		C1052D4B29ED69C4003FDFB7 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProviderDelegate.swift; sourceTree = "<group>"; };
+		C1052D5129ED6F1C003FDFB7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C1052D5529ED7761003FDFB7 /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		C1E579C729EB5FED00A6FEE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1E579CA29EB7CFE00A6FEE7 /* TestCase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCase.entitlements; sourceTree = "<group>"; };
 		C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1E579CE29EC5AD000A6FEE7 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		C1E579D229EC73AB00A6FEE7 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constans.swift; path = TestCase/Utilities/Components/TextField/Constans.swift; sourceTree = SOURCE_ROOT; };
 		C1E579D529EC76F700A6FEE7 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C1E579D829EC7BA200A6FEE7 /* LoginView+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+TextField.swift"; sourceTree = "<group>"; };
 		C1E579DE29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationUseCase.swift; sourceTree = "<group>"; };
@@ -76,7 +108,7 @@
 		C1E57A0329ECBD0C00A6FEE7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1E57A0529ECBD7A00A6FEE7 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProvider.swift; sourceTree = "<group>"; };
-		C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthProviderDelegate.swift; sourceTree = "<group>"; };
+		C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailProviderDelegate.swift; sourceTree = "<group>"; };
 		C1E57A0F29ECCAD200A6FEE7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C1E57A1229ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+AppleAuthentication.swift"; sourceTree = "<group>"; };
 		C1FE7D6129EB30B80069ED29 /* TestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +158,156 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C1052D2429ECDF70003FDFB7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D4429ECDF9C003FDFB7 /* Models */,
+				C1052D2B29ECDF70003FDFB7 /* Delegates */,
+				C1052D4129ECDF84003FDFB7 /* UseCases */,
+				C1052D4D29ED6E87003FDFB7 /* Provider */,
+				C1052D2729ECDF70003FDFB7 /* View */,
+				C1052D3229ECDF70003FDFB7 /* ViewController */,
+				C1052D2529ECDF70003FDFB7 /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C1052D2529ECDF70003FDFB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2629ECDF70003FDFB7 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1052D2729ECDF70003FDFB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2A29ECDF70003FDFB7 /* RegisterView.swift */,
+				C1052D2829ECDF70003FDFB7 /* Layouts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1052D2829ECDF70003FDFB7 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2929ECDF70003FDFB7 /* RegisterView+Layouts.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C1052D2B29ECDF70003FDFB7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2E29ECDF70003FDFB7 /* Navigation */,
+				C1052D3029ECDF70003FDFB7 /* View */,
+				C1052D2C29ECDF70003FDFB7 /* ViewModel */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C1052D2C29ECDF70003FDFB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2D29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1052D2E29ECDF70003FDFB7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D2F29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C1052D3029ECDF70003FDFB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D3129ECDF70003FDFB7 /* RegisterViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1052D3229ECDF70003FDFB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D3729ECDF70003FDFB7 /* RegisterViewController.swift */,
+				C1052D3529ECDF70003FDFB7 /* Binds */,
+				C1052D3329ECDF70003FDFB7 /* UIStateView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1052D3329ECDF70003FDFB7 /* UIStateView */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D3429ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift */,
+			);
+			path = UIStateView;
+			sourceTree = "<group>";
+		};
+		C1052D3529ECDF70003FDFB7 /* Binds */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D3629ECDF70003FDFB7 /* RegisterViewController+Binds.swift */,
+			);
+			path = Binds;
+			sourceTree = "<group>";
+		};
+		C1052D4129ECDF84003FDFB7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D4229ECDF97003FDFB7 /* RegisterUseCase.swift */,
+				C1052D4729ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C1052D4429ECDF9C003FDFB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D4529ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift */,
+				C1052D4929ECE018003FDFB7 /* RegisterResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1052D4D29ED6E87003FDFB7 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D4E29ED6EBB003FDFB7 /* Register */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C1052D4E29ED6EBB003FDFB7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D4F29ED6EE0003FDFB7 /* RegisterProviderDelegate.swift */,
+				C1052D5129ED6F1C003FDFB7 /* File.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C1052D5329ED6F2B003FDFB7 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				C1052D5429ED6F39003FDFB7 /* FirebaseAuth */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		C1052D5429ED6F39003FDFB7 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
 		C1E579CD29EC5ABC00A6FEE7 /* TextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +319,7 @@
 		C1E579D129EC739100A6FEE7 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				C1E579D229EC73AB00A6FEE7 /* Constans.swift */,
+				C1052D5529ED7761003FDFB7 /* Constans.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -218,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E57A0229ECBD0000A6FEE7 /* Models */,
+				C1052D5329ED6F2B003FDFB7 /* Provider */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -226,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E57A0329ECBD0C00A6FEE7 /* User.swift */,
+				C1052D4B29ED69C4003FDFB7 /* AppError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,18 +417,17 @@
 		C1E57A0729ECC58800A6FEE7 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				C1E57A0829ECC58F00A6FEE7 /* FirebaseAuth */,
+				C1E57A0829ECC58F00A6FEE7 /* Email */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
 		};
-		C1E57A0829ECC58F00A6FEE7 /* FirebaseAuth */ = {
+		C1E57A0829ECC58F00A6FEE7 /* Email */ = {
 			isa = PBXGroup;
 			children = (
-				C1E57A0929ECC59700A6FEE7 /* FirebaseAuthProvider.swift */,
-				C1E57A0B29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift */,
+				C1E57A0B29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift */,
 			);
-			path = FirebaseAuth;
+			path = Email;
 			sourceTree = "<group>";
 		};
 		C1E57A0D29ECCAC200A6FEE7 /* Extensions */ = {
@@ -435,6 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				C1FE7D8729EB33A70069ED29 /* Login */,
+				C1052D2429ECDF70003FDFB7 /* Register */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -674,42 +858,58 @@
 			files = (
 				C1E579F429ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */,
+				C1052D4329ECDF97003FDFB7 /* RegisterUseCase.swift in Sources */,
 				C1FE7DA129EB33A70069ED29 /* LoginViewController.swift in Sources */,
+				C1052D4629ECDFAF003FDFB7 /* RegisterUseCaseDTO.swift in Sources */,
+				C1052D3A29ECDF70003FDFB7 /* RegisterView.swift in Sources */,
+				C1052D5029ED6EE0003FDFB7 /* RegisterProviderDelegate.swift in Sources */,
 				C1E579D629EC76F800A6FEE7 /* Button.swift in Sources */,
 				C1E579EB29ECAD3900A6FEE7 /* EmailAuthenticationUseCase.swift in Sources */,
 				C1FE7DB929EB55400069ED29 /* Colors.swift in Sources */,
+				C1052D4C29ED69C4003FDFB7 /* AppError.swift in Sources */,
 				C1FE7DA329EB33A70069ED29 /* LoginViewController+Binds.swift in Sources */,
 				C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */,
 				C1E579FC29ECB0AD00A6FEE7 /* LoginAuthenticationUseCaseDTO.swift in Sources */,
+				C1052D3F29ECDF70003FDFB7 /* RegisterViewController+Binds.swift in Sources */,
+				C1052D3929ECDF70003FDFB7 /* RegisterView+Layouts.swift in Sources */,
+				C1052D3B29ECDF70003FDFB7 /* RegisterViewModelDelegate.swift in Sources */,
 				C1E57A0A29ECC59700A6FEE7 /* FirebaseAuthProvider.swift in Sources */,
 				C1FE7DB629EB3C430069ED29 /* AppCoordinator+Main.swift in Sources */,
+				C1052D3829ECDF70003FDFB7 /* RegisterViewModel.swift in Sources */,
+				C1052D5229ED6F1C003FDFB7 /* File.swift in Sources */,
 				C1E579FE29ECB7B700A6FEE7 /* EmailAuthenticationUseCaseDTO.swift in Sources */,
 				C1FE7D9F29EB33A70069ED29 /* LoginNavigationDelegate.swift in Sources */,
 				C1E579E329ECAC0800A6FEE7 /* AppleAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E57A0429ECBD0C00A6FEE7 /* User.swift in Sources */,
 				C1FE7DB329EB3BE60069ED29 /* AppCoordinator+Login.swift in Sources */,
 				C1FE7D9C29EB33A70069ED29 /* LoginView.swift in Sources */,
+				C1052D5629ED7761003FDFB7 /* Constans.swift in Sources */,
 				C1E579ED29ECAD4600A6FEE7 /* EmailAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E579F229ECAFB300A6FEE7 /* LoginAuthenticationUseCase.swift in Sources */,
 				C1FE7D9E29EB33A70069ED29 /* LoginViewModelDelegate.swift in Sources */,
 				C1E579DF29ECABD300A6FEE7 /* AppleAuthenticationUseCase.swift in Sources */,
 				C1FE7DAD29EB34A80069ED29 /* UIStateView.swift in Sources */,
+				C1052D4029ECDF70003FDFB7 /* RegisterViewController.swift in Sources */,
 				C1E579D929EC7BA200A6FEE7 /* LoginView+TextField.swift in Sources */,
+				C1052D4A29ECE018003FDFB7 /* RegisterResult.swift in Sources */,
 				C1FE7D9D29EB33A70069ED29 /* LoginView+Layouts.swift in Sources */,
 				C1FE7D6F29EB30B80069ED29 /* TestCase.xcdatamodeld in Sources */,
 				C1E57A0629ECBD7A00A6FEE7 /* LoginResult.swift in Sources */,
 				C1FE7DA229EB33A70069ED29 /* LoginViewController+UIStateView.swift in Sources */,
 				C1FE7DB029EB35F70069ED29 /* Binder.swift in Sources */,
 				C1FE7D9B29EB33A70069ED29 /* LoginViewModel.swift in Sources */,
+				C1052D3D29ECDF70003FDFB7 /* RegisterViewDelegate.swift in Sources */,
 				C1E579F729ECB05C00A6FEE7 /* LoginTypeEnum.swift in Sources */,
-				C1E579D329EC73AB00A6FEE7 /* Constans.swift in Sources */,
+				C1052D3E29ECDF70003FDFB7 /* RegisterViewController+UIStateView.swift in Sources */,
+				C1052D4829ECDFDB003FDFB7 /* RegisterUseCaseDelegate.swift in Sources */,
 				C1FE7DA029EB33A70069ED29 /* LoginViewDelegate.swift in Sources */,
 				C1E579FA29ECB09C00A6FEE7 /* AppleAuthenticationUseCaseDTO.swift in Sources */,
 				C1E57A1029ECCAD200A6FEE7 /* UIViewExtension.swift in Sources */,
+				C1052D3C29ECDF70003FDFB7 /* RegisterNavigationDelegate.swift in Sources */,
 				C1FE7D7E29EB32220069ED29 /* AppCoordinator.swift in Sources */,
 				C1FE7DAA29EB34190069ED29 /* CustomViewController.swift in Sources */,
 				C1FE7D6529EB30B80069ED29 /* AppDelegate.swift in Sources */,
-				C1E57A0C29ECC5AE00A6FEE7 /* FirebaseAuthProviderDelegate.swift in Sources */,
+				C1E57A0C29ECC5AE00A6FEE7 /* EmailProviderDelegate.swift in Sources */,
 				C1FE7D6729EB30B80069ED29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

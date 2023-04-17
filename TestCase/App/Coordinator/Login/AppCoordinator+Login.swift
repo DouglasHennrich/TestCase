@@ -69,7 +69,7 @@ private extension AppCoordinator {
   }
 
   func createEmailAuthenticationUseCase(
-    provider: FirebaseAuthProviderDelegate?
+    provider: EmailProviderDelegate?
   ) -> EmailAuthenticationUseCaseDelegate? {
     EmailAuthenticationUseCase(firebaseAuthProvider: provider)
   }

@@ -10,6 +10,6 @@ import Foundation
 protocol EmailAuthenticationUseCaseDelegate: AnyObject {
   func execute(
     _ request: EmailAuthenticationUseCaseDTO,
-    onCompletion completion: @escaping (Result<LoginResult, Error>) -> Void
+    onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   )
 }

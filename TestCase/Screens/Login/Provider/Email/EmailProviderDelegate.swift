@@ -7,11 +7,10 @@
 
 import Foundation
 
-protocol FirebaseAuthProviderDelegate: AnyObject {
+protocol EmailProviderDelegate: AnyObject {
   func login(
     email: String,
     password: String,
-    onCompletion completion: @escaping (Result<LoginResult, Error>) -> Void
+    onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   )
-  func register(email: String, password: String)
 }

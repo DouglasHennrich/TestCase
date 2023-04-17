@@ -10,19 +10,19 @@ import FirebaseAuth
 
 class EmailAuthenticationUseCase: EmailAuthenticationUseCaseDelegate {
   // MARK: Properties
-  var firebaseAuthProvider: FirebaseAuthProviderDelegate?
+  var emailProvider: EmailProviderDelegate?
 
   // MARK: Init
-  init(firebaseAuthProvider: FirebaseAuthProviderDelegate?) {
-    self.firebaseAuthProvider = firebaseAuthProvider
+  init(emailProvider: EmailProviderDelegate?) {
+    self.emailProvider = emailProvider
   }
 
   // MARK: Actions
   func execute(
     _ request: EmailAuthenticationUseCaseDTO,
-    onCompletion completion: @escaping (Result<LoginResult, Error>) -> Void
+    onCompletion completion: @escaping (Result<LoginResult, AppError>) -> Void
   ) {
-    firebaseAuthProvider?.login(
+    emailProvider?.login(
       email: request.email,
       password: request.password
     ) { result in
