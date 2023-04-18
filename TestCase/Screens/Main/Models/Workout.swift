@@ -42,3 +42,10 @@ extension Workout {
     return dateFormatter.string(from: self.date)
   }
 }
+
+// MARK: Equatable
+extension Workout: Equatable {
+  static func == (lhs: Workout, rhs: Workout) -> Bool {
+    lhs.uid == rhs.uid
+  }
+}

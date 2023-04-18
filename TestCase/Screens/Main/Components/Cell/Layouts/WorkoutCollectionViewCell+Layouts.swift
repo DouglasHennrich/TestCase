@@ -9,7 +9,9 @@ import UIKit
 
 extension WorkoutCollectionViewCell {
   func configureUI() {
-    configureContentView()
+    configureContentViewSpecs()
+    configureContentViewGesture()
+    configureContentViewConstraints()
     configureNameLabel()
     configureDescriptionLabel()
     configureDateLabel()
@@ -17,15 +19,26 @@ extension WorkoutCollectionViewCell {
     configureDetailsButton()
   }
 
-  func configureContentView() {
-    contentView.translatesAutoresizingMaskIntoConstraints = false
-
+  func configureContentViewSpecs() {
     contentView.clipsToBounds = true
     contentView.backgroundColor = .Colors.backgroundDark
     contentView.layer.cornerRadius = 6
     contentView.layer.borderWidth = 1.0
     contentView.layer.borderColor = UIColor.Colors.primary.cgColor
     contentView.layer.masksToBounds = true
+  }
+
+  func configureContentViewGesture() {
+    let longpressGesture = UILongPressGestureRecognizer(
+      target: self,
+      action: #selector(onShowDeleteAlertAction)
+    )
+
+    contentView.addGestureRecognizer(longpressGesture)
+  }
+
+  func configureContentViewConstraints() {
+    contentView.translatesAutoresizingMaskIntoConstraints = false
   }
 }
 

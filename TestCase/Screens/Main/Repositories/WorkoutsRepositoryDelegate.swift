@@ -12,4 +12,9 @@ protocol WorkoutsRepositoryDelegate: AnyObject {
     from userId: String,
     onCompletion completion: @escaping (Result<Data, Error>) -> Void
   )
+
+  func deleteWorkout(
+    _ workout: Workout,
+    onCompletion completion: @escaping (Result<(), Error>) -> Void
+  )
 }

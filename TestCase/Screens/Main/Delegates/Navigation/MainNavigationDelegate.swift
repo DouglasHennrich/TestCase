@@ -9,4 +9,7 @@
 
 import Foundation
 
-protocol MainNavigationDelegate: AnyObject {}
+protocol MainNavigationDelegate: AnyObject {
+  func onOpenWorkoutDetails(_ workout: Workout)
+  func onLogout()
+}

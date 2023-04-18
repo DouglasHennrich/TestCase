@@ -23,13 +23,22 @@ class MainViewController: CustomViewController<MainView> {
   // MARK: Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    configureNavigationBar()
     configureBinds()
     customView?.assignCollectionViewDelegates(to: self)
     
     customView?.delegate = self
-    title = "Workouts"
 
     viewModel?.getWorkouts()
+  }
+
+  // MARK: Actions
+  @objc func onNavBarAddButtonAction() {
+
+  }
+
+  @objc func onNavBarLogoutButtonAction() {
+    viewModel?.onLogoutAction()
   }
 }
 
@@ -37,6 +46,33 @@ class MainViewController: CustomViewController<MainView> {
 extension MainViewController: MainViewDelegate {
   func refreshWorkouts() {
     viewModel?.getWorkouts()
+  }
+}
+
+// MARK: Configure NavigationBar
+extension MainViewController {
+  func configureNavigationBar() {
+    title = "Workouts"
+
+    configureNavigationBarRightButtons()
+  }
+
+  func configureNavigationBarRightButtons() {
+    let logoutButton = UIBarButtonItem(
+      image: UIImage(systemName: "rectangle.portrait.and.arrow.right"),
+      style: .done,
+      target: self,
+      action: #selector(onNavBarLogoutButtonAction)
+    )
+
+    let addButton = UIBarButtonItem(
+      image: UIImage(systemName: "plus"),
+      style: .done,
+      target: self,
+      action: #selector(onNavBarAddButtonAction)
+    )
+
+    navigationItem.setRightBarButtonItems([logoutButton, addButton], animated: true)
   }
 }
 

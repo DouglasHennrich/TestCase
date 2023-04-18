@@ -83,6 +83,10 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
   }
 
   // MARK: Actions
+  @objc func onShowDeleteAlertAction() {
+    delegate?.onShowDeleteAlert(workout)
+  }
+
   @objc func onDetailsButtonAction() {
     delegate?.onWorkoutCellAction(workout)
   }

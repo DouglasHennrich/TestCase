@@ -17,6 +17,7 @@ class MainView: UIView {
   // MARK: Components
   let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
   let refreshControl = UIRefreshControl()
+  let emptyLabel = UILabel()
 
   // MARK: Init
   init() {

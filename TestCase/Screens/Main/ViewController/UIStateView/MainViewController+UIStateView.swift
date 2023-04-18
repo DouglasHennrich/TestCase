@@ -21,7 +21,8 @@ extension MainViewController {
       case .error(let message):
         onChangeUIStateError(withMessage: message)
 
-      case .empty: break
+      case .empty:
+        onChangeUIStateEmpty()
     }
   }
 }
@@ -30,6 +31,8 @@ extension MainViewController {
 private extension MainViewController {
   func onChangeUIStateNormal() {
     customView?.stopLoader()
+
+    customView?.emptyLabel.isHidden = true
   }
 }
 
@@ -37,6 +40,8 @@ private extension MainViewController {
 private extension MainViewController {
   func onChangeUIStateLoading() {
     customView?.startLoader()
+
+    customView?.emptyLabel.isHidden = true
   }
 }
 
@@ -45,11 +50,22 @@ private extension MainViewController {
   func onChangeUIStateError(withMessage message: String?) {
     customView?.stopLoader()
 
+    customView?.emptyLabel.isHidden = true
+
     let alert = UIAlertController(title: "Ops", message: message, preferredStyle: .alert)
     let action = UIAlertAction(title: "ok", style: .default)
 
     alert.addAction(action)
 
     present(alert, animated: true)
+  }
+}
+
+// MARK: Empty
+private extension MainViewController {
+  func onChangeUIStateEmpty() {
+    customView?.stopLoader()
+
+    customView?.emptyLabel.isHidden = false
   }
 }

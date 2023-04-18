@@ -56,4 +56,21 @@ class WorkoutsFirestoreRepository: WorkoutsRepositoryDelegate {
         completion(.success(payload))
       }
   }
+
+  func deleteWorkout(
+    _ workout: Workout,
+    onCompletion completion: @escaping (Result<(), Error>) -> Void
+  ) {
+    database
+      .collection("workouts")
+      .document(workout.uid)
+      .delete { error in
+        if let error {
+          completion(.failure(error))
+          return
+        }
+
+        completion(.success(()))
+      }
+  }
 }

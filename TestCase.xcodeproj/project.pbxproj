@@ -54,6 +54,9 @@
 		C17C7AB029EDB72C00775A81 /* WorkoutCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AAF29EDB72C00775A81 /* WorkoutCellDelegate.swift */; };
 		C17C7AB329EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AB229EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift */; };
 		C17C7AB629EDB85200775A81 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AB529EDB85200775A81 /* Label.swift */; };
+		C17C7AB929EE0A3000775A81 /* DeleteWorkoutUseCaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7AB829EE0A3000775A81 /* DeleteWorkoutUseCaseDelegate.swift */; };
+		C17C7ABB29EE0A4F00775A81 /* DeleteWorkoutUseCaseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7ABA29EE0A4F00775A81 /* DeleteWorkoutUseCaseDTO.swift */; };
+		C17C7ABD29EE0AFE00775A81 /* DeleteWorkoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C7ABC29EE0AFE00775A81 /* DeleteWorkoutUseCase.swift */; };
 		C1E579C829EB5FED00A6FEE7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C1E579C729EB5FED00A6FEE7 /* Podfile */; };
 		C1E579CC29EC4A4800A6FEE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */; };
 		C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E579CE29EC5AD000A6FEE7 /* TextField.swift */; };
@@ -147,6 +150,9 @@
 		C17C7AAF29EDB72C00775A81 /* WorkoutCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellDelegate.swift; sourceTree = "<group>"; };
 		C17C7AB229EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutCollectionViewCell+Layouts.swift"; sourceTree = "<group>"; };
 		C17C7AB529EDB85200775A81 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		C17C7AB829EE0A3000775A81 /* DeleteWorkoutUseCaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteWorkoutUseCaseDelegate.swift; sourceTree = "<group>"; };
+		C17C7ABA29EE0A4F00775A81 /* DeleteWorkoutUseCaseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteWorkoutUseCaseDTO.swift; sourceTree = "<group>"; };
+		C17C7ABC29EE0AFE00775A81 /* DeleteWorkoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteWorkoutUseCase.swift; sourceTree = "<group>"; };
 		C1E579C729EB5FED00A6FEE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1E579CA29EB7CFE00A6FEE7 /* TestCase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCase.entitlements; sourceTree = "<group>"; };
 		C1E579CB29EC4A4800A6FEE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -488,6 +494,7 @@
 		C17C7A8029ED867F00775A81 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				C17C7AB729EE0A0C00775A81 /* DeleteWorkout */,
 				C17C7A8129ED869300775A81 /* Workouts */,
 			);
 			path = UseCases;
@@ -508,6 +515,7 @@
 				C17C7A8329ED86C100775A81 /* Workout.swift */,
 				C17C7A8929ED8DFB00775A81 /* WorkoutsUseCaseDTO.swift */,
 				C17C7A8529ED88B600775A81 /* Exercise.swift */,
+				C17C7ABA29EE0A4F00775A81 /* DeleteWorkoutUseCaseDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -616,6 +624,15 @@
 				C17C7AB529EDB85200775A81 /* Label.swift */,
 			);
 			path = Label;
+			sourceTree = "<group>";
+		};
+		C17C7AB729EE0A0C00775A81 /* DeleteWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				C17C7AB829EE0A3000775A81 /* DeleteWorkoutUseCaseDelegate.swift */,
+				C17C7ABC29EE0AFE00775A81 /* DeleteWorkoutUseCase.swift */,
+			);
+			path = DeleteWorkout;
 			sourceTree = "<group>";
 		};
 		C1E579CD29EC5ABC00A6FEE7 /* TextField */ = {
@@ -1179,6 +1196,7 @@
 				C1E579F429ECAFD200A6FEE7 /* LoginAuthenticationUseCaseDelegate.swift in Sources */,
 				C1E57A1329ECD6B100A6FEE7 /* LoginViewController+AppleAuthentication.swift in Sources */,
 				C1052D4329ECDF97003FDFB7 /* RegisterUseCase.swift in Sources */,
+				C17C7AB929EE0A3000775A81 /* DeleteWorkoutUseCaseDelegate.swift in Sources */,
 				C1FE7DA129EB33A70069ED29 /* LoginViewController.swift in Sources */,
 				C17C7AB329EDB79E00775A81 /* WorkoutCollectionViewCell+Layouts.swift in Sources */,
 				C17C7A7C29ED857200775A81 /* MainViewDelegate.swift in Sources */,
@@ -1193,6 +1211,7 @@
 				C1FE7DB929EB55400069ED29 /* Colors.swift in Sources */,
 				C17C7A8629ED88B600775A81 /* Exercise.swift in Sources */,
 				C1052D4C29ED69C4003FDFB7 /* AppError.swift in Sources */,
+				C17C7ABD29EE0AFE00775A81 /* DeleteWorkoutUseCase.swift in Sources */,
 				C1FE7DA329EB33A70069ED29 /* LoginViewController+Binds.swift in Sources */,
 				C1E579CF29EC5AD000A6FEE7 /* TextField.swift in Sources */,
 				C17C7A7A29ED857200775A81 /* MainViewModelDelegate.swift in Sources */,
@@ -1223,6 +1242,7 @@
 				C17C7A7729ED857200775A81 /* MainViewModel.swift in Sources */,
 				C1FE7DAD29EB34A80069ED29 /* UIStateView.swift in Sources */,
 				C17C7AAD29EDB6B800775A81 /* WorkoutCollectionViewCell.swift in Sources */,
+				C17C7ABB29EE0A4F00775A81 /* DeleteWorkoutUseCaseDTO.swift in Sources */,
 				C1052D4029ECDF70003FDFB7 /* RegisterViewController.swift in Sources */,
 				C17C7AA529EDB3C100775A81 /* MainViewController+CollectionDelegate.swift in Sources */,
 				C17C7A7B29ED857200775A81 /* MainNavigationDelegate.swift in Sources */,

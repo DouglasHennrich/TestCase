@@ -8,6 +8,4 @@
 import UIKit
 
 // MARK: Delegate
-extension MainViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-  
-}
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {}

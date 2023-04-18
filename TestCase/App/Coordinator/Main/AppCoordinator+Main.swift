@@ -23,14 +23,31 @@ extension AppCoordinator {
 }
 
 // MARK: Conforms to navigation delegate
-extension AppCoordinator: MainNavigationDelegate {}
+extension AppCoordinator: MainNavigationDelegate {
+  func onOpenWorkoutDetails(_ workout: Workout) {
+
+  }
+
+  func onLogout() {
+    mainViewModel = nil
+
+    start()
+  }
+}
 
 // MARK: Private Actions
 private extension AppCoordinator {
   func createMainViewController() -> MainViewController {
     let workoutsRepository = createWorkoutsRepository()
     let workoutsUseCase = createWorkoutsUseCase(repository: workoutsRepository)
-    let viewModel = createMainViewModel(navigation: self, workoutsUseCase: workoutsUseCase)
+    let deleteWorkoutUseCase = createDeleteWorkoutUseCase(repository: workoutsRepository)
+
+    let viewModel = createMainViewModel(
+      navigation: self,
+      workoutsUseCase: workoutsUseCase,
+      deleteWorkoutUseCase: deleteWorkoutUseCase
+    )
+
     let vc = MainViewController.initialize(viewModel: viewModel)
 
     return vc
@@ -38,9 +55,14 @@ private extension AppCoordinator {
 
   func createMainViewModel(
     navigation: MainNavigationDelegate?,
-    workoutsUseCase: WorkoutsUseCaseDelegate?
+    workoutsUseCase: WorkoutsUseCaseDelegate?,
+    deleteWorkoutUseCase: DeleteWorkoutUseCaseDelegate?
   ) -> MainViewModelDelegate? {
-    let viewModel = MainViewModel(navigation: navigation, workoutsUseCase: workoutsUseCase)
+    let viewModel = MainViewModel(
+      navigation: navigation,
+      workoutsUseCase: workoutsUseCase,
+      deleteWorkoutUseCase: deleteWorkoutUseCase
+    )
 
     mainViewModel = viewModel
 
@@ -49,6 +71,10 @@ private extension AppCoordinator {
 
   func createWorkoutsUseCase(repository: WorkoutsRepositoryDelegate?) -> WorkoutsUseCaseDelegate? {
     WorkoutsUseCase(repository: repository)
+  }
+
+  func createDeleteWorkoutUseCase(repository: WorkoutsRepositoryDelegate?) -> DeleteWorkoutUseCaseDelegate? {
+    DeleteWorkoutUseCase(repository: repository)
   }
 
   func createWorkoutsRepository() -> WorkoutsRepositoryDelegate? {

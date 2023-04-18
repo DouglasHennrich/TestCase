@@ -14,6 +14,7 @@ extension MainView {
     configureSelf()
     configureCollectionView()
     configureRefreshControl()
+    configureEmptyLabel()
   }
 
   func configureSelf() {
@@ -87,5 +88,41 @@ private extension MainView {
 
   func configureRefreshControlAction() {
     refreshControl.addTarget(self, action: #selector(onRefreshControl), for: .valueChanged)
+  }
+}
+
+// MARK: EmptyLabel
+private extension MainView {
+  func configureEmptyLabel() {
+    collectionView.addSubview(emptyLabel)
+
+    configureEmptyLabelSpecs()
+    configureEmptyLabelConstraints()
+  }
+
+  func configureEmptyLabelSpecs() {
+    emptyLabel.font = .systemFont(ofSize: 16, weight: .medium)
+    emptyLabel.textAlignment = .center
+    emptyLabel.textColor = .Colors.primary
+    emptyLabel.text = "nenhum treino salvo ainda"
+    emptyLabel.isHidden = true
+  }
+
+  func configureEmptyLabelConstraints() {
+    emptyLabel.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      emptyLabel.centerXAnchor.constraint(equalTo: collectionView.centerXAnchor),
+    ])
+
+    NSLayoutConstraint(
+      item: emptyLabel,
+      attribute: .centerY,
+      relatedBy: .equal,
+      toItem: collectionView,
+      attribute: .centerY,
+      multiplier: 0.6,
+      constant: 0
+    ).isActive = true
   }
 }

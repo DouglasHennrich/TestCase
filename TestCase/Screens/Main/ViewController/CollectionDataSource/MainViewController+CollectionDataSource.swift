@@ -35,4 +35,25 @@ extension MainViewController: WorkoutCellDelegate {
   func onWorkoutCellAction(_ workout: Workout?) {
     viewModel?.openWorkoutDetails(workout)
   }
+
+  func onShowDeleteAlert(_ workout: Workout?) {
+    let alert = UIAlertController(
+      title: "Atenção",
+      message: "Você deseja deletar esse treino?",
+      preferredStyle: .alert
+    )
+
+    let deleteAction = UIAlertAction(title: "deletar", style: .destructive) { [weak self] _ in
+      guard let self = self else { return }
+
+      self.viewModel?.onDeleteWorkout(workout)
+    }
+
+    let backAction = UIAlertAction(title: "voltar", style: .cancel)
+
+    alert.addAction(deleteAction)
+    alert.addAction(backAction)
+
+    present(alert, animated: true)
+  }
 }
