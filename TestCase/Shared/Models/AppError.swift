@@ -10,6 +10,7 @@ import Foundation
 enum AppError: Error {
   case noUserFound
   case missingParameters
+  case cantCreateWorkout
 
   case unknow(message: String?)
 
@@ -21,6 +22,9 @@ enum AppError: Error {
 
       case .missingParameters:
         return "Campos faltando"
+
+      case .cantCreateWorkout:
+        return "Não foi possível criar o treino"
 
       case .unknow(let message):
         return message ?? "Erro inesperado"

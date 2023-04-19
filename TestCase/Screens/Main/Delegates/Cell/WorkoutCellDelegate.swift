@@ -8,6 +8,6 @@
 import Foundation
 
 protocol WorkoutCellDelegate: AnyObject {
-  func onWorkoutCellAction(_ workout: Workout?)
+  func onWorkoutDetailsCellAction(_ workout: Workout?)
   func onShowDeleteAlert(_ workout: Workout?)
 }

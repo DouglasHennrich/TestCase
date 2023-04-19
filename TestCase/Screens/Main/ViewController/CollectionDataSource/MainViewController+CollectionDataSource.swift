@@ -32,7 +32,7 @@ extension MainViewController: UICollectionViewDataSource {
 
 // MARK: Workout Cell Delegate
 extension MainViewController: WorkoutCellDelegate {
-  func onWorkoutCellAction(_ workout: Workout?) {
+  func onWorkoutDetailsCellAction(_ workout: Workout?) {
     viewModel?.openWorkoutDetails(workout)
   }
 

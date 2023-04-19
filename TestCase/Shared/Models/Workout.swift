@@ -22,12 +22,14 @@ class Workout: Codable {
     uid: String,
     name: String,
     description: String,
-    date: TimeInterval = Date().timeIntervalSince1970
+    date: TimeInterval = Date().timeIntervalSince1970,
+    exercises: Exercises = []
   ) {
     self.uid = uid
     self.name = name
     self.description = description
     self.date = Date(timeIntervalSince1970: date)
+    self.exercises = exercises
   }
 }
 
@@ -40,6 +42,13 @@ extension Workout {
     dateFormatter.dateFormat = "HH:mm dd/MM/yyyy"
 
     return dateFormatter.string(from: self.date)
+  }
+}
+
+// MARK: Empty Workout
+extension Workout {
+  static func empty() -> Workout {
+    .init(uid: "", name: "", description: "")
   }
 }
 

@@ -26,6 +26,7 @@ extension AppCoordinator: RegisterNavigationDelegate {
   }
 }
 
+// MARK: Factory
 private extension AppCoordinator {
   func createRegisterViewController() -> RegisterViewController {
     let repository = createRegisterRepository()

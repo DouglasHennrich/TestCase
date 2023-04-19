@@ -32,7 +32,7 @@ extension AppCoordinator {
   }
 }
 
-// MARK: Private Actions
+// MARK: Factory
 private extension AppCoordinator {
   func createLoginViewController(navigation: LoginNavigationDelegate?) -> LoginViewController {
     let viewModel = createLoginViewModel(navigation: navigation)

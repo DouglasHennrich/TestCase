@@ -12,6 +12,7 @@ class AppCoordinator {
   var loginViewModel: LoginViewModel?
   var registerViewModel: RegisterViewModelDelegate?
   var mainViewModel: MainViewModelDelegate?
+  var workoutViewModel: WorkoutViewModelDelegate?
 
   // MARK: Components
   let window: UIWindow?

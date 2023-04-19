@@ -9,10 +9,12 @@ import UIKit
 
 class Button: UIButton {
   // MARK: Properties
+  private var fulfill = true
+
+  // MARK: Components
   lazy var heightConstraint: NSLayoutConstraint = {
     heightAnchor.constraint(equalToConstant: 40)
   }()
-  private var fulfill = true
 
   // MARK: Init
   init(

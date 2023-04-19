@@ -26,6 +26,12 @@ class MainViewModel {
     self.navigation = navigation
     self.workoutsUseCase = workoutsUseCase
     self.deleteWorkoutUseCase = deleteWorkoutUseCase
+
+    addNotifications()
+  }
+
+  deinit {
+    NotificationCenter.default.removeObserver(self)
   }
 
   // MARK: Actions
@@ -43,6 +49,19 @@ class MainViewModel {
     workouts.value.removeAll(where: { $0 == workout })
 
     stateView.value = workouts.value.isNotEmpty ? .normal : .empty
+  }
+
+  func addNotifications() {
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(onRefreshWorkoutsNotification),
+      name: Constants.Notification.refreshWorkouts,
+      object: nil
+    )
+  }
+
+  @objc func onRefreshWorkoutsNotification() {
+    getWorkouts()
   }
 }
 
@@ -93,5 +112,9 @@ extension MainViewModel: MainViewModelDelegate {
   func onLogoutAction() {
     UserDefaults.standard.removeObject(forKey: Constants.UserDefaults.userId)
     navigation?.onLogout()
+  }
+
+  func onAddWorkoutAction() {
+    navigation?.onAddWorkout()
   }
 }

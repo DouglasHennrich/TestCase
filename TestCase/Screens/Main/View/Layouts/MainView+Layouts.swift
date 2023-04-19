@@ -37,6 +37,7 @@ private extension MainView {
     collectionView.backgroundColor = .clear
     collectionView.showsVerticalScrollIndicator = false
     collectionView.alwaysBounceVertical = true
+    collectionView.keyboardDismissMode = .interactive
   }
 
   func configureCollectionViewLayout() {

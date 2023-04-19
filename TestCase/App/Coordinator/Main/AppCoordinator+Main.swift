@@ -25,7 +25,7 @@ extension AppCoordinator {
 // MARK: Conforms to navigation delegate
 extension AppCoordinator: MainNavigationDelegate {
   func onOpenWorkoutDetails(_ workout: Workout) {
-
+    openWorkout(workout)
   }
 
   func onLogout() {
@@ -33,9 +33,13 @@ extension AppCoordinator: MainNavigationDelegate {
 
     start()
   }
+
+  func onAddWorkout() {
+    openWorkout(nil)
+  }
 }
 
-// MARK: Private Actions
+// MARK: Factory
 private extension AppCoordinator {
   func createMainViewController() -> MainViewController {
     let workoutsRepository = createWorkoutsRepository()

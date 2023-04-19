@@ -17,4 +17,16 @@ protocol WorkoutsRepositoryDelegate: AnyObject {
     _ workout: Workout,
     onCompletion completion: @escaping (Result<(), Error>) -> Void
   )
+
+  func editWorkout(
+    _ workout: Workout,
+    userId: String,
+    onCompletion completion: @escaping (Result<(), Error>) -> Void
+  )
+
+  func createWorkout(
+    _ workout: Workout,
+    userId: String,
+    onCompletion completion: @escaping (Result<Data, Error>) -> Void
+  )
 }

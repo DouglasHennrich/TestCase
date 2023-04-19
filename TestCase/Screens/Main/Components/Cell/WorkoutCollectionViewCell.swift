@@ -88,6 +88,6 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
   }
 
   @objc func onDetailsButtonAction() {
-    delegate?.onWorkoutCellAction(workout)
+    delegate?.onWorkoutDetailsCellAction(workout)
   }
 }

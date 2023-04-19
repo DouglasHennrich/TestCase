@@ -14,14 +14,19 @@ class TextField: UITextField {
   }()
 
   private let padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+  private var outline = false
 
   // MARK: Init
   init(
     placeholder: String? = "",
     type: UIKeyboardType = .default,
-    isPassword: Bool = false
+    isPassword: Bool = false,
+    outline: Bool = false
   ) {
     super.init(frame: .zero)
+
+    self.outline = outline
+
     configureUI()
 
     self.placeholder = placeholder
@@ -63,13 +68,15 @@ private extension TextField {
   }
 
   func configureSpecs() {
-    backgroundColor = .Colors.backgroundDark
     tintColor = .Colors.primary
     textAlignment = .left
     textColor = .Colors.label
     font = .systemFont(ofSize: 14)
     autocorrectionType = .no
 
+    guard !outline else { return }
+
+    backgroundColor = .Colors.backgroundDark
     layer.cornerRadius = 4
     layer.borderColor = UIColor.Colors.primary.cgColor
     layer.borderWidth = 1

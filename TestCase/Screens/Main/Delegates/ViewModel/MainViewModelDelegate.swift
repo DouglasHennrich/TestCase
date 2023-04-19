@@ -17,4 +17,5 @@ protocol MainViewModelDelegate: AnyObject {
   func openWorkoutDetails(_ workout: Workout?)
   func onDeleteWorkout(_ workout: Workout?)
   func onLogoutAction()
+  func onAddWorkoutAction()
 }

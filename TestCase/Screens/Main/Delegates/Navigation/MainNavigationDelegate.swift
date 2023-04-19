@@ -12,4 +12,5 @@ import Foundation
 protocol MainNavigationDelegate: AnyObject {
   func onOpenWorkoutDetails(_ workout: Workout)
   func onLogout()
+  func onAddWorkout()
 }

@@ -53,7 +53,11 @@ enum Constants {
     }
   }
 
+  enum Notification {
+    static let refreshWorkouts = NSNotification.Name("refreshWorkouts")
+  }
+
   enum UserDefaults {
-    static let userId = "WorkoutsUserId"
+    static let userId = "userId"
   }
 }

@@ -11,6 +11,11 @@ class Label: UILabel {
   // MARK: Properties
   private var fontWeight: UIFont.Weight = .regular
 
+  // MARK: Components
+  lazy var heightConstraint: NSLayoutConstraint = {
+    heightAnchor.constraint(equalToConstant: 14)
+  }()
+
   // MARK: Init
   init(
     text: String? = nil,
@@ -47,5 +52,9 @@ private extension Label {
 
   func configureConstraints() {
     translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      heightConstraint
+    ])
   }
 }

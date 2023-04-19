@@ -34,7 +34,7 @@ class MainViewController: CustomViewController<MainView> {
 
   // MARK: Actions
   @objc func onNavBarAddButtonAction() {
-
+    viewModel?.onAddWorkoutAction()
   }
 
   @objc func onNavBarLogoutButtonAction() {

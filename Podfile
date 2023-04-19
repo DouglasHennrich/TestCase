@@ -10,6 +10,7 @@ target "TestCase" do
   pod "FirebaseAuth"
   pod "FirebaseFirestore"
   pod "FirebaseStorage"
+  pod "Kingfisher"
 
   pod "SwiftLint", :configurations => ["Debug"]
   pod "FLEX", :configurations => ["Debug"]

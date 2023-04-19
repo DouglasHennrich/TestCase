@@ -215,6 +215,7 @@ private extension WorkoutCollectionViewCell {
     contentView.addSubview(detailsButton)
 
     configureDetailsButtonSpecs()
+    configureDetailsButtonAction()
     configureDetailsButtonConstraints()
   }
 
